@@ -1,19 +1,14 @@
 package com.bootgussy.dancecenterservice.core.service;
 
 import com.bootgussy.dancecenterservice.core.model.Trainer;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
 @Service
 public class TrainerService {
-
     private final List<Trainer> trainers = new ArrayList<>(
             List.of(
                     Trainer.builder()

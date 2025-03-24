@@ -5,8 +5,11 @@ import com.bootgussy.dancecenterservice.api.dto.response.GroupResponseDto;
 import com.bootgussy.dancecenterservice.core.model.Group;
 import com.bootgussy.dancecenterservice.core.model.Student;
 import com.bootgussy.dancecenterservice.core.model.Trainer;
-import java.util.List;
+
+import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;
@@ -34,19 +37,19 @@ public interface GroupMapper {
     @Named("mapStudents")
     default List<Student> mapStudents(List<Long> studentIds) {
         if (studentIds == null) {
-            return null;
+            return new ArrayList<>();
         }
         return studentIds.stream().map(id -> {
             Student student = new Student();
             student.setId(id);
             return student;
-        }).collect(Collectors.toList());
+        }).toList();
     }
 
     @Named("mapStudentIds")
     default List<Long> mapStudentIds(List<Student> students) {
         if (students == null) {
-            return null;
+            return new ArrayList<>();
         }
         return students.stream()
                 .map(Student::getId)

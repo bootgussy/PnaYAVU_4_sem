@@ -4,6 +4,23 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+/build/
+/out/
+/bin/
+/gradle/
+.env
+*.log
+/.idea/
+*.iml
+/.classpath
+/.project
+/.settings/
+Thumbs.db
+.DS_Store
+*.class
+*.jar
+*.war
+*.ear
 
 ### STS ###
 .apt_generated

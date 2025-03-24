@@ -1,6 +1,5 @@
 package com.bootgussy.dancecenterservice.core.service;
 
-import com.bootgussy.dancecenterservice.core.model.ScheduleItem;
 import com.bootgussy.dancecenterservice.core.model.Student;
 import java.util.List;
 

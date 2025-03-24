@@ -4,6 +4,8 @@ import com.bootgussy.dancecenterservice.api.dto.create.TrainerCreateDto;
 import com.bootgussy.dancecenterservice.api.dto.response.TrainerResponseDto;
 import com.bootgussy.dancecenterservice.core.model.Group;
 import com.bootgussy.dancecenterservice.core.model.Trainer;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.mapstruct.Mapper;
@@ -22,7 +24,7 @@ public interface TrainerMapper {
     @Named("mapGroups")
     default List<Long> mapGroups(List<Group> groups) {
         if (groups == null) {
-            return null;
+            return new ArrayList<>();
         }
         return groups.stream().map(Group::getId).collect(Collectors.toList());
     }

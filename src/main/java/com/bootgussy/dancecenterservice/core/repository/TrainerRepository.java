@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface TrainerRepository extends JpaRepository<Trainer, Long> {
     List<Trainer> findByName(String name);
 
-    List<Trainer> findByNameAndPhoneNumber(String name, String phoneNumber);
+    List<Trainer> findByNameAndPhoneNumberAndDanceStyle(String name, String phoneNumber, String danceStyle);
 }

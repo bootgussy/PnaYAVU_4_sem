@@ -35,7 +35,7 @@ public class StudentServiceImpl implements StudentService {
 
         if (
                 student.getName() == null ||
-                student.getPhoneNumber() == null
+                        student.getPhoneNumber() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
                     "(name, phoneNumber).");
@@ -59,7 +59,7 @@ public class StudentServiceImpl implements StudentService {
 
         if (
                 student.getName() == null ||
-                student.getPhoneNumber() == null
+                        student.getPhoneNumber() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
                     "(name, phoneNumber).");

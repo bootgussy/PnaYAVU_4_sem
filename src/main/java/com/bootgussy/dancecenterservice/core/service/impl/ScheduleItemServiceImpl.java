@@ -1,3 +1,4 @@
+
 package com.bootgussy.dancecenterservice.core.service.impl;
 
 import com.bootgussy.dancecenterservice.core.exception.AlreadyExistsException;
@@ -34,10 +35,10 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
     public ScheduleItem createScheduleItem(ScheduleItem scheduleItem) {
         if (
                 scheduleItem.getHall() == null ||
-                scheduleItem.getGroup() == null ||
-                scheduleItem.getDayOfWeek() == null ||
-                scheduleItem.getStartTime() == null ||
-                scheduleItem.getEndTime() == null
+                        scheduleItem.getGroup() == null ||
+                        scheduleItem.getDayOfWeek() == null ||
+                        scheduleItem.getStartTime() == null ||
+                        scheduleItem.getEndTime() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
                     "(hallId, groupId, dayOfWeek, startTime, endTime).");
@@ -45,13 +46,13 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
 
         if (
                 !(
-                    scheduleItem.getDayOfWeek().equals("Monday") ||
-                    scheduleItem.getDayOfWeek().equals("Tuesday") ||
-                    scheduleItem.getDayOfWeek().equals("Wednesday") ||
-                    scheduleItem.getDayOfWeek().equals("Thursday") ||
-                    scheduleItem.getDayOfWeek().equals("Friday") ||
-                    scheduleItem.getDayOfWeek().equals("Saturday") ||
-                    scheduleItem.getDayOfWeek().equals("Sunday")
+                        scheduleItem.getDayOfWeek().equals("Monday") ||
+                                scheduleItem.getDayOfWeek().equals("Tuesday") ||
+                                scheduleItem.getDayOfWeek().equals("Wednesday") ||
+                                scheduleItem.getDayOfWeek().equals("Thursday") ||
+                                scheduleItem.getDayOfWeek().equals("Friday") ||
+                                scheduleItem.getDayOfWeek().equals("Saturday") ||
+                                scheduleItem.getDayOfWeek().equals("Sunday")
                 )
         ) {
             throw new IncorrectDataException("Day of week is incorrect. Example: Monday");
@@ -94,10 +95,10 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
     public ScheduleItem updateScheduleItem(ScheduleItem scheduleItem) {
         if (
                 scheduleItem.getHall() == null ||
-                scheduleItem.getGroup() == null ||
-                scheduleItem.getDayOfWeek() == null ||
-                scheduleItem.getStartTime() == null ||
-                scheduleItem.getEndTime() == null
+                        scheduleItem.getGroup() == null ||
+                        scheduleItem.getDayOfWeek() == null ||
+                        scheduleItem.getStartTime() == null ||
+                        scheduleItem.getEndTime() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
                     "(hallId, groupId, dayOfWeek, startTime, endTime).");

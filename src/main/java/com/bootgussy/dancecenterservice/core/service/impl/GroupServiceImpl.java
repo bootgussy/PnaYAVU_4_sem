@@ -1,3 +1,4 @@
+
 package com.bootgussy.dancecenterservice.core.service.impl;
 
 import com.bootgussy.dancecenterservice.core.exception.AlreadyExistsException;
@@ -75,7 +76,7 @@ public class GroupServiceImpl implements GroupService {
     public Group updateGroup(Group group) {
         if (
                 group.getDifficulty() == null ||
-                group.getTrainer() == null
+                        group.getTrainer() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
                     "(trainerId, difficulty).");
@@ -105,9 +106,9 @@ public class GroupServiceImpl implements GroupService {
             updatedGroup = groupRepository.save(group);
         } else {
             throw new ResourceNotFoundException("The group does not exist." +
-                                                " ID: " + group.getId() +
-                                                ", Trainer: " + group.getTrainer().getName() +
-                                                ", Difficulty: " + group.getDifficulty());
+                    " ID: " + group.getId() +
+                    ", Trainer: " + group.getTrainer().getName() +
+                    ", Difficulty: " + group.getDifficulty());
         }
 
         return updatedGroup;

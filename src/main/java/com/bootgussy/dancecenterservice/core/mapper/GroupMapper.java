@@ -3,58 +3,59 @@ package com.bootgussy.dancecenterservice.core.mapper;
 import com.bootgussy.dancecenterservice.api.dto.create.GroupCreateDto;
 import com.bootgussy.dancecenterservice.api.dto.response.GroupResponseDto;
 import com.bootgussy.dancecenterservice.core.model.Group;
+import com.bootgussy.dancecenterservice.core.model.ScheduleItem;
 import com.bootgussy.dancecenterservice.core.model.Student;
 import com.bootgussy.dancecenterservice.core.model.Trainer;
-
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
+import com.bootgussy.dancecenterservice.core.repository.ScheduleItemRepository;
+import com.bootgussy.dancecenterservice.core.repository.StudentRepository;
+import com.bootgussy.dancecenterservice.core.repository.TrainerRepository;
+import java.util.List;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.Named;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Mapper(componentModel = "spring")
-public interface GroupMapper {
-    @Mapping(source = "trainer.id", target = "trainerId")
-    @Mapping(target = "studentsId", expression = "java(mapStudentIds(group.getStudents()))")
-    GroupResponseDto toResponseDto(Group group);
+public abstract class GroupMapper {
+    @Autowired
+    protected StudentRepository studentRepository;
 
-    @Mapping(source = "trainerId", target = "trainer", qualifiedByName = "mapTrainer")
-    @Mapping(target = "students", expression = "java(mapStudents(dto.getStudentsId()))")
-    Group toEntity(GroupCreateDto dto);
+    @Autowired
+    protected TrainerRepository trainerRepository;
 
-    @Named("mapTrainer")
-    default Trainer mapTrainer(Long trainerId) {
-        if (trainerId == null) {
-            return null;
-        }
-        Trainer trainer = new Trainer();
-        trainer.setId(trainerId);
-        return trainer;
+    @Autowired
+    protected StudentMapper studentMapper;
+
+    @Autowired
+    protected TrainerMapper trainerMapper;
+
+    @Mapping(target = "trainer",
+            expression = "java(mapTrainerIdToTrainer(groupCreateDto.getTrainerId()))")
+    @Mapping(target = "students",
+            expression = "java(mapStudentsIdToStudents(groupCreateDto.getStudentsId()))")
+    public abstract Group toEntity(GroupCreateDto groupCreateDto);
+
+    @Mapping(target = "scheduleItemsId",
+            expression = "java(group.getScheduleItems() != null " +
+                    "? " +
+                    "group.getScheduleItems().stream().map(s -> s.getId()).toList() " +
+                    ": " +
+                    "new ArrayList<>())")
+    @Mapping(target = "students",
+            expression = "java(studentMapper.toResponseDtoList(group.getStudents()))")
+    @Mapping(target = "trainer",
+            expression = "java(trainerMapper.toResponseDto(group.getTrainer()))")
+    public abstract GroupResponseDto toResponseDto(Group group);
+
+    public abstract List<GroupResponseDto> toResponseDtoList(List<Group> entities);
+
+    protected Trainer mapTrainerIdToTrainer(Long trainerId) {
+        return trainerRepository.findById(trainerId).orElse(null);
     }
 
-    @Named("mapStudents")
-    default List<Student> mapStudents(List<Long> studentIds) {
-        if (studentIds == null) {
-            return new ArrayList<>();
-        }
-        return studentIds.stream().map(id -> {
-            Student student = new Student();
-            student.setId(id);
-            return student;
-        }).toList();
+    protected List<Student> mapStudentsIdToStudents(List<Long> studentsId) {
+        return studentsId
+                .stream()
+                .map(id -> studentRepository.findById(id).orElse(null))
+                .toList();
     }
-
-    @Named("mapStudentIds")
-    default List<Long> mapStudentIds(List<Student> students) {
-        if (students == null) {
-            return new ArrayList<>();
-        }
-        return students.stream()
-                .map(Student::getId)
-                .collect(Collectors.toList());
-    }
-
-    List<GroupResponseDto> toResponseDtoList(List<Group> groups);
 }

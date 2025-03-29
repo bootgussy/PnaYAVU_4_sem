@@ -35,14 +35,18 @@ public class TrainerServiceImpl implements TrainerService {
 
         if (
                 trainer.getName() == null ||
-                trainer.getPhoneNumber() == null ||
-                trainer.getDanceStyle() == null
+                        trainer.getPhoneNumber() == null ||
+                        trainer.getDanceStyle() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
                     "(name, phoneNumber, danceStyle).");
         }
 
-        if (trainerRepository.findByNameAndPhoneNumber(trainer.getName(), trainer.getPhoneNumber())
+        if (trainerRepository.findByNameAndPhoneNumberAndDanceStyle(
+                        trainer.getName(),
+                        trainer.getPhoneNumber(),
+                        trainer.getDanceStyle()
+                )
                 .isEmpty()) {
             savedTrainer = trainerRepository.save(trainer);
         } else {
@@ -61,14 +65,18 @@ public class TrainerServiceImpl implements TrainerService {
 
         if (
                 trainer.getName() == null ||
-                trainer.getPhoneNumber() == null ||
-                trainer.getDanceStyle() == null
+                        trainer.getPhoneNumber() == null ||
+                        trainer.getDanceStyle() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
                     "(name, phoneNumber, danceStyle).");
         }
 
-        if (!trainerRepository.findByNameAndPhoneNumber(trainer.getName(), trainer.getPhoneNumber())
+        if (!trainerRepository.findByNameAndPhoneNumberAndDanceStyle(
+                        trainer.getName(),
+                        trainer.getPhoneNumber(),
+                        trainer.getDanceStyle()
+                )
                 .isEmpty()) {
             throw new AlreadyExistsException("Trainer already exists. " +
                     "Name: " + trainer.getName() +

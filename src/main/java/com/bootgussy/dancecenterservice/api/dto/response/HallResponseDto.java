@@ -1,5 +1,7 @@
 package com.bootgussy.dancecenterservice.api.dto.response;
 
+import com.bootgussy.dancecenterservice.core.model.ScheduleItem;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -17,4 +19,6 @@ public class HallResponseDto {
     private String name;
 
     private Integer area;
+
+    private List<Long> scheduleItemsId;
 }

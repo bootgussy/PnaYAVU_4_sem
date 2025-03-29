@@ -1,3 +1,4 @@
+
 package com.bootgussy.dancecenterservice.core.service.impl;
 
 import com.bootgussy.dancecenterservice.core.exception.AlreadyExistsException;
@@ -35,7 +36,7 @@ public class HallServiceImpl implements HallService {
 
         if (
                 hall.getName() == null ||
-                hall.getArea() == null
+                        hall.getArea() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled (name, area).");
         }
@@ -57,7 +58,7 @@ public class HallServiceImpl implements HallService {
 
         if (
                 hall.getName() == null ||
-                hall.getArea() == null
+                        hall.getArea() == null
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled (name, area).");
         }

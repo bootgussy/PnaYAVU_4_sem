@@ -7,14 +7,7 @@ import com.bootgussy.dancecenterservice.core.model.Group;
 import com.bootgussy.dancecenterservice.core.service.GroupService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/group")
@@ -32,6 +25,12 @@ public class GroupController {
     @GetMapping
     public List<GroupResponseDto> findAllGroups() {
         List<Group> groups = groupService.findAllGroups();
+        return groupMapper.toResponseDtoList(groups);
+    }
+
+    @GetMapping("/dance_style/{danceStyle}")
+    public List<GroupResponseDto> findAllGroupsByDanceStyle(@PathVariable String danceStyle) {
+        List<Group> groups = groupService.findAllGroupsByDanceStyle(danceStyle);
         return groupMapper.toResponseDtoList(groups);
     }
 

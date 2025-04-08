@@ -1,10 +1,12 @@
 package com.bootgussy.dancecenterservice.core.service.impl;
 
+import com.bootgussy.dancecenterservice.core.config.CacheConfig;
 import com.bootgussy.dancecenterservice.core.exception.AlreadyExistsException;
 import com.bootgussy.dancecenterservice.core.exception.ResourceNotFoundException;
 import com.bootgussy.dancecenterservice.core.model.Trainer;
 import com.bootgussy.dancecenterservice.core.repository.TrainerRepository;
 import com.bootgussy.dancecenterservice.core.service.TrainerService;
+import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,16 +14,31 @@ import org.springframework.stereotype.Service;
 @Service
 public class TrainerServiceImpl implements TrainerService {
     private final TrainerRepository trainerRepository;
+    private final CacheConfig cacheConfig;
 
     @Autowired
-    public TrainerServiceImpl(TrainerRepository trainerRepository) {
+    public TrainerServiceImpl(TrainerRepository trainerRepository,
+                              CacheConfig cacheConfig) {
         this.trainerRepository = trainerRepository;
+        this.cacheConfig = cacheConfig;
     }
 
     @Override
     public Trainer findTrainerById(Long id) {
-        return trainerRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Trainer not found. ID: " + id));
+        Trainer cachedTrainer = cacheConfig.getTrainer(id);
+        if (cachedTrainer != null) {
+            return cachedTrainer;
+        }
+
+        Trainer trainer = trainerRepository.findById(id).orElse(null);
+
+        if (trainer != null) {
+            cacheConfig.putTrainer(id, trainer);
+
+            return trainer;
+        } else {
+            throw new ResourceNotFoundException("Trainer not found. ID: " + id);
+        }
     }
 
     @Override
@@ -55,6 +72,8 @@ public class TrainerServiceImpl implements TrainerService {
                     ", Phone number: " + trainer.getPhoneNumber() +
                     ", Dance style: " + trainer.getDanceStyle());
         }
+
+        cacheConfig.putTrainer(savedTrainer.getId(), savedTrainer);
 
         return savedTrainer;
     }
@@ -94,6 +113,8 @@ public class TrainerServiceImpl implements TrainerService {
                     ", Dance style: " + trainer.getDanceStyle());
         }
 
+        cacheConfig.putTrainer(updatedTrainer.getId(), updatedTrainer);
+
         return updatedTrainer;
     }
 
@@ -101,6 +122,8 @@ public class TrainerServiceImpl implements TrainerService {
     public void deleteTrainer(Long id) {
         Trainer trainer = trainerRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Trainer not found. ID: " + id));
+
+        cacheConfig.removeTrainer(trainer.getId());
 
         trainerRepository.delete(trainer);
     }

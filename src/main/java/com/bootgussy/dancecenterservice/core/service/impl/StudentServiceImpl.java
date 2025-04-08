@@ -1,5 +1,6 @@
 package com.bootgussy.dancecenterservice.core.service.impl;
 
+import com.bootgussy.dancecenterservice.core.config.CacheConfig;
 import com.bootgussy.dancecenterservice.core.exception.AlreadyExistsException;
 import com.bootgussy.dancecenterservice.core.exception.ResourceNotFoundException;
 import com.bootgussy.dancecenterservice.core.model.Student;
@@ -12,16 +13,31 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
+    private final CacheConfig cacheConfig;
 
     @Autowired
-    public StudentServiceImpl(StudentRepository studentRepository) {
+    public StudentServiceImpl(StudentRepository studentRepository,
+                              CacheConfig cacheConfig) {
         this.studentRepository = studentRepository;
+        this.cacheConfig = cacheConfig;
     }
 
     @Override
     public Student findStudentById(Long id) {
-        return studentRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Student not found. ID: " + id));
+        Student cachedStudent = cacheConfig.getStudent(id);
+        if (cachedStudent != null) {
+            return cachedStudent;
+        }
+
+        Student student = studentRepository.findById(id).orElse(null);
+
+        if (student != null) {
+            cacheConfig.putStudent(id, student);
+
+            return student;
+        } else {
+            throw new ResourceNotFoundException("Student not found. ID: " + id);
+        }
     }
 
     @Override
@@ -49,6 +65,8 @@ public class StudentServiceImpl implements StudentService {
                     " Name: " + student.getName() +
                     ", Phone number: " + student.getPhoneNumber());
         }
+
+        cacheConfig.putStudent(savedStudent.getId(), savedStudent);
 
         return savedStudent;
     }
@@ -81,6 +99,8 @@ public class StudentServiceImpl implements StudentService {
                     ", Phone number: " + student.getPhoneNumber());
         }
 
+        cacheConfig.putStudent(updatedStudent.getId(), updatedStudent);
+
         return updatedStudent;
     }
 
@@ -88,6 +108,8 @@ public class StudentServiceImpl implements StudentService {
     public void deleteStudent(Long id) {
         Student student = studentRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Student not found. ID: " + id));
+
+        cacheConfig.removeStudent(student.getId());
 
         studentRepository.delete(student);
     }

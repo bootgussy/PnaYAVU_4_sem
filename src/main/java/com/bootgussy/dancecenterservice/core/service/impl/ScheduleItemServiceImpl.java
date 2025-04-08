@@ -1,6 +1,6 @@
-
 package com.bootgussy.dancecenterservice.core.service.impl;
 
+import com.bootgussy.dancecenterservice.core.config.CacheConfig;
 import com.bootgussy.dancecenterservice.core.exception.AlreadyExistsException;
 import com.bootgussy.dancecenterservice.core.exception.IncorrectDataException;
 import com.bootgussy.dancecenterservice.core.exception.ResourceNotFoundException;
@@ -14,16 +14,31 @@ import org.springframework.stereotype.Service;
 @Service
 public class ScheduleItemServiceImpl implements ScheduleItemService {
     private final ScheduleItemRepository scheduleItemRepository;
+    private final CacheConfig cacheConfig;
 
     @Autowired
-    public ScheduleItemServiceImpl(ScheduleItemRepository scheduleItemRepository) {
+    public ScheduleItemServiceImpl(ScheduleItemRepository scheduleItemRepository,
+                                   CacheConfig cacheConfig) {
         this.scheduleItemRepository = scheduleItemRepository;
+        this.cacheConfig = cacheConfig;
     }
 
     @Override
     public ScheduleItem findScheduleItemById(Long id) {
-        return scheduleItemRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Schedule item not found. ID: " + id));
+        ScheduleItem cachedScheduleItem = cacheConfig.getScheduleItem(id);
+        if (cachedScheduleItem != null) {
+            return cachedScheduleItem;
+        }
+
+        ScheduleItem scheduleItem = scheduleItemRepository.findById(id).orElse(null);
+
+        if (scheduleItem != null) {
+            cacheConfig.putScheduleItem(id, scheduleItem);
+
+            return scheduleItem;
+        } else {
+            throw new ResourceNotFoundException("Schedule item not found. ID: " + id);
+        }
     }
 
     @Override
@@ -88,7 +103,11 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
                     ", End time: " + scheduleItem.getEndTime());
         }
 
-        return scheduleItemRepository.save(scheduleItem);
+        ScheduleItem savedScheduleItem = scheduleItemRepository.save(scheduleItem);
+
+        cacheConfig.putScheduleItem(savedScheduleItem.getId(), savedScheduleItem);
+
+        return savedScheduleItem;
     }
 
     @Override
@@ -148,6 +167,8 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
                     ", End time: " + scheduleItem.getEndTime());
         }
 
+        cacheConfig.putScheduleItem(scheduleItem.getId(), updatedScheduleItem);
+
         return updatedScheduleItem;
     }
 
@@ -155,6 +176,8 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
     public void deleteScheduleItem(Long id) {
         ScheduleItem scheduleItem = scheduleItemRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Schedule item not found. ID: " + id));
+
+        cacheConfig.removeScheduleItem(scheduleItem.getId());
 
         scheduleItemRepository.delete(scheduleItem);
     }

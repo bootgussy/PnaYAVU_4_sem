@@ -1,51 +1,16 @@
 package com.bootgussy.dancecenterservice.core.service;
 
 import com.bootgussy.dancecenterservice.core.model.Trainer;
-import java.util.ArrayList;
 import java.util.List;
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Service;
 
-@AllArgsConstructor
-@Service
-public class TrainerService {
-    private final List<Trainer> trainers = new ArrayList<>(
-            List.of(
-                    Trainer.builder()
-                            .id(0L)
-                            .name("Катя Вишня")
-                            .phoneNumber("+375291111111")
-                            .danceStyle("Waacking")
-                            .build(),
+public interface TrainerService {
+    Trainer findTrainerById(Long id);
 
-                    Trainer.builder()
-                            .id(1L)
-                            .name("Иван Виноград")
-                            .phoneNumber("+375292222222")
-                            .danceStyle("Electro")
-                            .build(),
+    List<Trainer> findAllTrainers();
 
-                    Trainer.builder()
-                            .id(2L)
-                            .name("Саня Каштан")
-                            .phoneNumber("+375293333333")
-                            .danceStyle("Hip-Hop")
-                            .build(),
+    Trainer createTrainer(Trainer trainer);
 
-                    Trainer.builder()
-                            .id(3L)
-                            .name("Оля Апельсин")
-                            .phoneNumber("+375294444444")
-                            .danceStyle("Electro")
-                            .build()
-            )
-    );
+    Trainer updateTrainer(Trainer trainer);
 
-    public Trainer findById(Long id) {
-        return trainers.stream().filter(trainer -> trainer.getId().equals(id)).findFirst().orElse(null);
-    }
-
-    public List<Trainer> findByDanceStyle(String danceStyle) {
-        return trainers.stream().filter(trainer -> trainer.getDanceStyle().equals(danceStyle)).toList();
-    }
+    void deleteTrainer(Long id);
 }

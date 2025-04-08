@@ -1,7 +1,6 @@
 package com.bootgussy.dancecenterservice.core.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,15 +17,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Getter
 @Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "trainers")
-public class Trainer {
+@Table(name = "halls")
+public class Hall {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -34,13 +32,10 @@ public class Trainer {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "phone_number")
-    private String phoneNumber;
+    @Column(name = "area")
+    private Integer area;
 
-    @Column(name = "dance_style")
-    private String danceStyle;
-
-    @OneToMany(mappedBy = "trainer", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "hall", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JsonBackReference
-    private List<Group> groups;
+    private List<ScheduleItem> scheduleItems;
 }

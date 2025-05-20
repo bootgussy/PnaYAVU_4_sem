@@ -46,6 +46,16 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
         return scheduleItemRepository.findAll();
     }
 
+    public boolean isValidDayOfWeek(String dayOfWeek) {
+        if (dayOfWeek == null) {
+            return false;
+        }
+        return dayOfWeek.equals("Monday") || dayOfWeek.equals("Tuesday") ||
+                dayOfWeek.equals("Wednesday") || dayOfWeek.equals("Thursday") ||
+                dayOfWeek.equals("Friday") || dayOfWeek.equals("Saturday") ||
+                dayOfWeek.equals("Sunday");
+    }
+
     @Override
     public ScheduleItem createScheduleItem(ScheduleItem scheduleItem) {
         if (
@@ -59,17 +69,7 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
                     "(hallId, groupId, dayOfWeek, startTime, endTime).");
         }
 
-        if (
-                !(
-                        scheduleItem.getDayOfWeek().equals("Monday") ||
-                                scheduleItem.getDayOfWeek().equals("Tuesday") ||
-                                scheduleItem.getDayOfWeek().equals("Wednesday") ||
-                                scheduleItem.getDayOfWeek().equals("Thursday") ||
-                                scheduleItem.getDayOfWeek().equals("Friday") ||
-                                scheduleItem.getDayOfWeek().equals("Saturday") ||
-                                scheduleItem.getDayOfWeek().equals("Sunday")
-                )
-        ) {
+        if (!isValidDayOfWeek(scheduleItem.getDayOfWeek())) {
             throw new IncorrectDataException("Day of week is incorrect. Example: Monday");
         }
 
@@ -111,6 +111,64 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
     }
 
     @Override
+    public List<ScheduleItem> createMultipleScheduleItems(List<ScheduleItem> scheduleItems) {
+        for (ScheduleItem scheduleItem : scheduleItems) {
+            if (
+                    scheduleItem.getHall() == null ||
+                            scheduleItem.getGroup() == null ||
+                            scheduleItem.getDayOfWeek() == null ||
+                            scheduleItem.getStartTime() == null ||
+                            scheduleItem.getEndTime() == null
+            ) {
+                throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
+                        "(hallId, groupId, dayOfWeek, startTime, endTime).");
+            }
+
+            if (!isValidDayOfWeek(scheduleItem.getDayOfWeek())) {
+                throw new IncorrectDataException("Day of week is incorrect. Example: Monday");
+            }
+
+            if (!scheduleItemRepository.findByHallAndGroupAndDayOfWeekAndStartTimeAndEndTime(
+                    scheduleItem.getHall(),
+                    scheduleItem.getGroup(),
+                    scheduleItem.getDayOfWeek(),
+                    scheduleItem.getStartTime(),
+                    scheduleItem.getEndTime()
+            ).isEmpty()) {
+                throw new AlreadyExistsException("Schedule item already exists." +
+                        " Group: " + scheduleItem.getGroup().getId() +
+                        ", Hall: " + scheduleItem.getHall().getId() +
+                        ", Day of week: " + scheduleItem.getDayOfWeek() +
+                        ", Start time: " + scheduleItem.getStartTime() +
+                        ", End time: " + scheduleItem.getEndTime());
+            }
+
+            List<ScheduleItem> existingScheduleItems = scheduleItemRepository
+                    .findByDayOfWeekAndHall(scheduleItem.getDayOfWeek(), scheduleItem.getHall());
+
+            boolean isTimeBusy = existingScheduleItems.stream().anyMatch(currentScheduleItem ->
+                    (currentScheduleItem.getStartTime().isBefore(scheduleItem.getEndTime()) &&
+                            currentScheduleItem.getEndTime().isAfter(scheduleItem.getStartTime()))
+            );
+
+            if (isTimeBusy) {
+                throw new AlreadyExistsException("This time in this hall is busy." +
+                        " Group ID: " + scheduleItem.getGroup().getId() +
+                        ", Start time: " + scheduleItem.getStartTime() +
+                        ", End time: " + scheduleItem.getEndTime());
+            }
+        }
+
+        List<ScheduleItem> savedScheduleItems = scheduleItemRepository.saveAll(scheduleItems);
+
+        for (ScheduleItem savedScheduleItem : savedScheduleItems) {
+            cacheConfig.putScheduleItem(savedScheduleItem.getId(), savedScheduleItem);
+        }
+
+        return savedScheduleItems;
+    }
+
+    @Override
     public ScheduleItem updateScheduleItem(ScheduleItem scheduleItem) {
         if (
                 scheduleItem.getHall() == null ||
@@ -121,6 +179,10 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
         ) {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled " +
                     "(hallId, groupId, dayOfWeek, startTime, endTime).");
+        }
+
+        if (!isValidDayOfWeek(scheduleItem.getDayOfWeek())) {
+            throw new IncorrectDataException("Day of week is incorrect. Example: Monday");
         }
 
         List<ScheduleItem> existingScheduleItems = scheduleItemRepository

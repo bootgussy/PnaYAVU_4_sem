@@ -7,6 +7,7 @@ import com.bootgussy.dancecenterservice.core.model.Hall;
 import com.bootgussy.dancecenterservice.core.repository.HallRepository;
 import com.bootgussy.dancecenterservice.core.service.HallService;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -79,7 +80,9 @@ public class HallServiceImpl implements HallService {
             throw new ResourceNotFoundException("Incorrect JSON. All fields must be filled (name, area).");
         }
 
-        if (hallRepository.findByName(hall.getName()).isPresent()) {
+        Optional<Hall> searchedHall = hallRepository.findByName(hall.getName());
+
+        if (searchedHall.isPresent() && !hall.getId().equals(searchedHall.get().getId())) {
             throw new AlreadyExistsException("Hall already exists." +
                     " Name: " + hall.getName() +
                     ", Area: " + hall.getArea());

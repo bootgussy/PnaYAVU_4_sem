@@ -8,6 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.PreRemove;
 import jakarta.persistence.Table;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -34,6 +35,16 @@ public class Student {
     @Column(name = "phone_number")
     private String phoneNumber;
 
-    @ManyToMany(mappedBy = "students", cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "students", cascade = {
+            CascadeType.MERGE,
+            CascadeType.PERSIST
+    }, fetch = FetchType.LAZY)
     private List<Group> groups;
+
+    @PreRemove
+    private void removeGroupAssociations() {
+        for (Group group : this.groups) {
+            group.getStudents().remove(this);
+        }
+    }
 }

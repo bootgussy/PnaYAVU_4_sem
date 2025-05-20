@@ -98,10 +98,10 @@ public class LogController {
     public ResponseEntity<LogFileTask> getTaskStatus(@PathVariable String taskId) {
         LogFileTask task = logFileId.getTaskStatus(taskId);
         if (task == null) {
-            logger.warn("Task not found: {}", taskId);
+            logger.warn("Task not found");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        logger.info("Task status retrieved for ID: {}", taskId);
+        logger.info("Task status retrieved");
         return new ResponseEntity<>(task, HttpStatus.OK);
     }
 
@@ -110,7 +110,7 @@ public class LogController {
     public ResponseEntity<byte[]> downloadLogFile(@PathVariable String taskId) {
         Path filePath = logFileId.getLogFilePath(taskId);
         if (filePath == null) {
-            logger.warn("Log file not found for task ID: {}", taskId);
+            logger.warn("Log file not found");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 

@@ -83,7 +83,7 @@ public class ScheduleItemController {
             @Valid @RequestBody List<ScheduleItemCreateDto> createDtos) {
         List<ScheduleItem> scheduleItems = createDtos.stream()
                 .map(scheduleItemMapper::toEntity)
-                .collect(Collectors.toList());
+                .toList();
 
         List<ScheduleItem> createdScheduleItems = scheduleItemService
                 .createMultipleScheduleItems(scheduleItems);

@@ -27,8 +27,6 @@ public class VisitCounterFilter implements Filter {
 
         visitCounter.incrementVisit(requestUrl);
 
-        System.out.println("Visited URL: " + requestUrl);
-
         chain.doFilter(request, response);
     }
 }

@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class StudentServiceImplTest {
+class StudentServiceImplTest {
 
     @InjectMocks
     private StudentServiceImpl studentService;
@@ -53,9 +53,10 @@ public class StudentServiceImplTest {
         when(cacheConfig.getStudent(student.getId())).thenReturn(null);
         when(studentRepository.findById(student.getId())).thenReturn(Optional.empty());
 
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            studentService.findStudentById(student.getId());
-        });
+        ResourceNotFoundException exception = assertThrows(
+                ResourceNotFoundException.class,
+                () -> studentService.findStudentById(student.getId())
+        );
 
         assertEquals("Student not found. ID: 1", exception.getMessage());
     }
@@ -170,9 +171,10 @@ public class StudentServiceImplTest {
     void deleteStudent_NonExistingId_ThrowsException() {
         when(studentRepository.findById(student.getId())).thenReturn(Optional.empty());
 
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            studentService.deleteStudent(student.getId());
-        });
+        ResourceNotFoundException exception = assertThrows(
+                ResourceNotFoundException.class,
+                () -> studentService.deleteStudent(student.getId())
+        );
 
         assertEquals("Student not found. ID: 1", exception.getMessage());
     }

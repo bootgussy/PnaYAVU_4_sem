@@ -27,7 +27,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class ScheduleItemServiceImplTest {
+class ScheduleItemServiceImplTest {
     @InjectMocks
     private ScheduleItemServiceImpl scheduleItemService;
 
@@ -69,9 +69,10 @@ public class ScheduleItemServiceImplTest {
         when(cacheConfig.getScheduleItem(scheduleItem.getId())).thenReturn(null);
         when(scheduleItemRepository.findById(scheduleItem.getId())).thenReturn(Optional.empty());
 
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            scheduleItemService.findScheduleItemById(scheduleItem.getId());
-        });
+        ResourceNotFoundException exception = assertThrows(
+                ResourceNotFoundException.class,
+                () -> scheduleItemService.findScheduleItemById(scheduleItem.getId())
+        );
 
         assertEquals("Schedule item not found. ID: 1", exception.getMessage());
     }
@@ -388,9 +389,10 @@ public class ScheduleItemServiceImplTest {
     void deleteScheduleItem_NonExistingId_ThrowsException() {
         when(scheduleItemRepository.findById(scheduleItem.getId())).thenReturn(Optional.empty());
 
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            scheduleItemService.deleteScheduleItem(scheduleItem.getId());
-        });
+        ResourceNotFoundException exception = assertThrows(
+                ResourceNotFoundException.class,
+                () -> scheduleItemService.deleteScheduleItem(scheduleItem.getId())
+        );
 
         assertEquals("Schedule item not found. ID: 1", exception.getMessage());
     }

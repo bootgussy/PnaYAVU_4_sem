@@ -20,7 +20,11 @@ public class LoggingAspect {
             LOGGER.info("Completed: {}", joinPoint.getSignature());
             return result;
         } catch (Throwable throwable) {
-            LOGGER.error("Error in: {} - {}", joinPoint.getSignature(), throwable.getMessage());
+            LOGGER.error(
+                    "Error in method: {} - Exception: ",
+                    joinPoint.getSignature(),
+                    throwable
+            );
             throw throwable;
         }
     }

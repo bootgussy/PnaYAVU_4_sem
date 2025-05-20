@@ -1,13 +1,23 @@
 package com.bootgussy.dancecenterservice.api.controller;
 
-import java.io.ByteArrayOutputStream;
+import com.bootgussy.dancecenterservice.core.aspect.LogFileId;
+import com.bootgussy.dancecenterservice.core.model.LogFileTask;
+import io.swagger.v3.oas.annotations.Operation;
 import java.io.IOException;
-import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.zip.GZIPInputStream;
+import java.util.List;
+import java.util.regex.Pattern;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,26 +25,105 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/logs")
 public class LogController {
-    @GetMapping("/download")
-    public byte[] downloadLogFile(@RequestParam String date) throws IOException {
-        String logFilePath = "logs/app.log." + date + ".0.gz"; // Путь к сжатому файлу
-        Path path = Paths.get(logFilePath);
+    private final LogFileId logFileId;
+    private static final Logger logger = LoggerFactory.getLogger(LogController.class);
 
-        if (!Files.exists(path)) {
-            throw new IOException("File not found: " + logFilePath);
+    public LogController(LogFileId logFileId) {
+        this.logFileId = logFileId;
+    }
+
+    @Operation(summary = "Request log file sorted by date and logging level")
+    @GetMapping
+    public ResponseEntity<byte[]> getLogFile(
+            @RequestParam String date,
+            @RequestParam(required = false, defaultValue = "all") String level) {
+        if (!date.matches("\\d{4}-\\d{2}-\\d{2}")) {
+            logger.warn("Invalid date format: {}", date);
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 
-        try (InputStream fileInputStream = Files.newInputStream(path);
-             GZIPInputStream gzipInputStream = new GZIPInputStream(fileInputStream);
-             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream()) {
+        String logFileName = "logs/dance_center-" + date + ".0.log";
+        Path logFilePath = Path.of(logFileName).normalize();
+        logger.info("Checking for log file at: {}", logFilePath);
 
-            byte[] buffer = new byte[1024];
-            int len;
-            while ((len = gzipInputStream.read(buffer)) != -1) {
-                byteArrayOutputStream.write(buffer, 0, len);
+        if (Files.exists(logFilePath)) {
+            try (var linesStream = Files.lines(logFilePath, StandardCharsets.UTF_8)) {
+                List<String> lines;
+
+                if (!"all".equalsIgnoreCase(level)) {
+                    String logLevel = level.toUpperCase();
+                    var logPattern = Pattern.compile(
+                            "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{3} \\[.*?\\] " + logLevel + " ");
+
+                    lines = linesStream.filter(line -> logPattern.matcher(line).find()).toList();
+                } else {
+                    lines = linesStream.toList();
+                }
+
+                byte[] logFileBytes = String.join("\n", lines).getBytes(StandardCharsets.UTF_8);
+
+                HttpHeaders headers = new HttpHeaders();
+                headers.setContentType(MediaType.TEXT_PLAIN);
+                headers.setContentDispositionFormData("attachment", "dance_center-" + date + "-" + level + ".log");
+
+                logger.info("Log file retrieved successfully: {}", logFileName);
+                return new ResponseEntity<>(logFileBytes, headers, HttpStatus.OK);
+            } catch (IOException e) {
+                logger.error("Error reading log file: {}", e.getMessage());
+                return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
             }
+        } else {
+            logger.warn("Log file not found: {}", logFileName);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 
-            return byteArrayOutputStream.toByteArray();
+    @Operation(summary = "Create a task to generate a log file asynchronously")
+    @PostMapping("/generate")
+    public ResponseEntity<String> createLogFileTask(
+            @RequestParam String date,
+            @RequestParam(required = false, defaultValue = "all") String level) {
+        if (!date.matches("\\d{4}-\\d{2}-\\d{2}")) {
+            logger.warn("Invalid date format for task creation: {}", date);
+            return new ResponseEntity<>("Invalid date format", HttpStatus.BAD_REQUEST);
+        }
+
+        String taskId = logFileId.createLogFileTask(date, level);
+        logger.info("Log file generation task created with ID: {}", taskId);
+        return new ResponseEntity<>(taskId, HttpStatus.ACCEPTED);
+    }
+
+    @Operation(summary = "Get the status of a log file generation task")
+    @GetMapping("/status/{taskId}")
+    public ResponseEntity<LogFileTask> getTaskStatus(@PathVariable String taskId) {
+        LogFileTask task = logFileId.getTaskStatus(taskId);
+        if (task == null) {
+            logger.warn("Task not found: {}", taskId);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        logger.info("Task status retrieved for ID: {}", taskId);
+        return new ResponseEntity<>(task, HttpStatus.OK);
+    }
+
+    @Operation(summary = "Download the generated log file by task ID")
+    @GetMapping("/download/{taskId}")
+    public ResponseEntity<byte[]> downloadLogFile(@PathVariable String taskId) {
+        Path filePath = logFileId.getLogFilePath(taskId);
+        if (filePath == null) {
+            logger.warn("Log file not found for task ID: {}", taskId);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        try {
+            byte[] fileBytes = Files.readAllBytes(filePath);
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(MediaType.TEXT_PLAIN);
+            headers.setContentDispositionFormData("attachment", filePath.getFileName().toString());
+            logger.info("Log file downloaded successfully: {}", filePath.getFileName());
+            return new ResponseEntity<>(fileBytes, headers, HttpStatus.OK);
+        } catch (IOException e) {
+            logger.error("Error downloading log file: {}", e.getMessage());
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }

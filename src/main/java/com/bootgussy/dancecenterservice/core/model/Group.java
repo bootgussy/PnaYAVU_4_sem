@@ -43,7 +43,7 @@ public class Group {
     @JsonManagedReference
     private Trainer trainer;
 
-    @ManyToMany(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
+    @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST }, fetch = FetchType.LAZY)
     @JoinTable(
             name = "group_students",
             joinColumns = @JoinColumn(name = "group_id"),

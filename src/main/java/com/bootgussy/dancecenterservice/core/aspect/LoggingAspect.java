@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class LoggingAspect {
     private static final Logger LOGGER = LoggerFactory.getLogger(LoggingAspect.class);
 
-    @Around("execution(* com.bootgussy.dancecenterservice..*(..))")
+    @Around("execution(* com.bootgussy.dancecenterservice.core.service.*.*(..))")
     public Object logExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
         LOGGER.info("Executing: {}", joinPoint.getSignature());
         try {

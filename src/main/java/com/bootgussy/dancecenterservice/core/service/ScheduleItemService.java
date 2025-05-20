@@ -10,6 +10,8 @@ public interface ScheduleItemService {
 
     ScheduleItem createScheduleItem(ScheduleItem scheduleItem);
 
+    List<ScheduleItem> createMultipleScheduleItems(List<ScheduleItem> scheduleItems);
+
     ScheduleItem updateScheduleItem(ScheduleItem scheduleItem);
 
     void deleteScheduleItem(Long id);

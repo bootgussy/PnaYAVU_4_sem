@@ -11,6 +11,7 @@ import com.bootgussy.dancecenterservice.core.repository.StudentRepository;
 import com.bootgussy.dancecenterservice.core.repository.TrainerRepository;
 import com.bootgussy.dancecenterservice.core.service.GroupService;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -115,10 +116,12 @@ public class GroupServiceImpl implements GroupService {
             }
         }
 
-        if (groupRepository.findByTrainerAndDifficulty(
+        Optional<Group> searchedGroup = groupRepository.findByTrainerAndDifficulty(
                 group.getTrainer(),
                 group.getDifficulty()
-        ).isPresent()) {
+        );
+
+        if (searchedGroup.isPresent() && !group.getId().equals(searchedGroup.get().getId())) {
             throw new AlreadyExistsException("Group already exists. " +
                     "TrainerId: " + group.getTrainer().getId() +
                     ", Difficulty: " + group.getDifficulty());

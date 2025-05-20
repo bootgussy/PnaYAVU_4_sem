@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class HallServiceImplTest {
+class HallServiceImplTest {
     @InjectMocks
     private HallServiceImpl hallService;
 
@@ -52,9 +52,10 @@ public class HallServiceImplTest {
         when(cacheConfig.getHall(hall.getId())).thenReturn(null);
         when(hallRepository.findById(hall.getId())).thenReturn(Optional.empty());
 
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            hallService.findHallById(hall.getId());
-        });
+        ResourceNotFoundException exception = assertThrows(
+                ResourceNotFoundException.class,
+                () -> hallService.findHallById(hall.getId())
+        );
 
         assertEquals("Hall not found. ID: 1", exception.getMessage());
     }
@@ -96,17 +97,6 @@ public class HallServiceImplTest {
     @Test
     void createHall_InvalidHall_ThrowsException() {
         hall.setName(null); // Устанавливаем имя в null
-
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            hallService.createHall(hall);
-        });
-
-        assertEquals("Incorrect JSON. All fields must be filled (name, area).", exception.getMessage());
-    }
-
-    @Test
-    void createHall_InvalidHallName_ThrowsException() {
-        hall.setName(null);
 
         ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
             hallService.createHall(hall);
@@ -188,9 +178,10 @@ public class HallServiceImplTest {
     void createHall_NullArea_ThrowsException() {
         hall.setArea(null); // Устанавливаем площадь в null
 
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            hallService.createHall(hall);
-        });
+        ResourceNotFoundException exception = assertThrows(
+                ResourceNotFoundException.class,
+                () -> hallService.createHall(hall)
+        );
 
         assertEquals("Incorrect JSON. All fields must be filled (name, area).", exception.getMessage());
     }

@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class TrainerServiceImplTest {
+class TrainerServiceImplTest {
 
     @InjectMocks
     private TrainerServiceImpl trainerService;
@@ -53,9 +53,10 @@ public class TrainerServiceImplTest {
         when(cacheConfig.getTrainer(trainer.getId())).thenReturn(null);
         when(trainerRepository.findById(trainer.getId())).thenReturn(Optional.empty());
 
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            trainerService.findTrainerById(trainer.getId());
-        });
+        ResourceNotFoundException exception = assertThrows(
+                ResourceNotFoundException.class,
+                () -> trainerService.findTrainerById(trainer.getId())
+        );
 
         assertEquals("Trainer not found. ID: 1", exception.getMessage());
     }
@@ -185,9 +186,9 @@ public class TrainerServiceImplTest {
     void deleteTrainer_NonExistingId_ThrowsException() {
         when(trainerRepository.findById(trainer.getId())).thenReturn(Optional.empty());
 
-        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class, () -> {
-            trainerService.deleteTrainer(trainer.getId());
-        });
+        ResourceNotFoundException exception = assertThrows(ResourceNotFoundException.class,
+                () -> trainerService.deleteTrainer(trainer.getId())
+        );
 
         assertEquals("Trainer not found. ID: 1", exception.getMessage());
     }

@@ -17,7 +17,9 @@ public class GroupResponseDto {
 
     private String difficulty;
 
-    private Long trainerId;
+    private TrainerResponseDto trainer;
 
-    private List<Long> studentsId;
+    private List<StudentResponseDto> students;
+
+    private List<Long> scheduleItemsId;
 }

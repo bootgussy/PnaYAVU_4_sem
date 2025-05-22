@@ -1,0 +1,96 @@
+/* src/components/Modal/AddScheduleModal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный фон */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Поверх всего остального */
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px; /* Максимальная ширина модального окна */
+    max-height: 90vh; /* Максимальная высота */
+    overflow-y: auto; /* Прокрутка, если контент не помещается */
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group select,
+.form-group input[type="time"] /* Если бы использовали input type="time" */ {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Чтобы padding не увеличивал общую ширину */
+    font-size: 16px;
+}
+
+.modal-actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end; /* Кнопки справа */
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+.modal-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.modal-button.save {
+    background-color: #6a11cb; /* Ваш основной цвет */
+    color: white;
+}
+
+.modal-button.save:hover {
+    background-color: #5e0fa9;
+}
+
+.modal-button.cancel {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.modal-button.cancel:hover {
+    background-color: #e0e0e0;
+}
+
+.modal-error {
+    color: red;
+    background-color: #ffebee;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}

@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.concurrent.locks.ReentrantLock;
 
 public class LruCache<K, V> {
     private final Map<K, V> cache;
-    private final ReentrantLock lock = new ReentrantLock();
 
     public LruCache(int maxSize) {
         this.cache = new LinkedHashMap<>(maxSize, 0.75f, true) {
@@ -20,38 +18,18 @@ public class LruCache<K, V> {
     }
 
     public V get(K key) {
-        lock.lock();
-        try {
-            return cache.get(key);
-        } finally {
-            lock.unlock();
-        }
+        return cache.get(key);
     }
 
     public void put(K key, V value) {
-        lock.lock();
-        try {
-            cache.put(key, value);
-        } finally {
-            lock.unlock();
-        }
+        cache.put(key, value);
     }
 
     public void remove(K key) {
-        lock.lock();
-        try {
-            cache.remove(key);
-        } finally {
-            lock.unlock();
-        }
+        cache.remove(key);
     }
 
     public Collection<V> getAll() {
-        lock.lock();
-        try {
-            return new ArrayList<>(cache.values());
-        } finally {
-            lock.unlock();
-        }
+        return new ArrayList<>(cache.values());
     }
 }

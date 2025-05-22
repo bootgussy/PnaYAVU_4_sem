@@ -1,5 +1,6 @@
 package com.bootgussy.dancecenterservice.core.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.nio.file.Path;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,6 +16,7 @@ import lombok.Setter;
 public class LogFileTask {
     private String taskId;
     private String status;
+    @JsonIgnore
     private Path filePath;
     private String errorMessage;
 

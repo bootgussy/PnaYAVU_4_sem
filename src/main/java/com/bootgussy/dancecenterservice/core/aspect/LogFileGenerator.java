@@ -16,12 +16,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class LogFileGenerator {
-    private static final Logger logger = LoggerFactory.getLogger(LogFileGenerator.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(LogFileGenerator.class);
 
     @Async("taskExecutor")
-    public void generateLogFileAsync(LogFileTask task, String date, String level) throws InterruptedException {
+    public void generateLogFileAsync(LogFileTask task, String date, String level)
+            throws InterruptedException {
         Thread.sleep(15000);
-        logger.info("Starting log file generation for task {} in thread {}",
+        LOGGER.info("Starting log file generation for task {} in thread {}",
                 task.getTaskId(), Thread.currentThread().getName());
         try {
             String logFileName = "logs/dance_center-" + date + ".0.log";
@@ -40,7 +41,8 @@ public class LogFileGenerator {
                 if (!"all".equalsIgnoreCase(level)) {
                     String logLevel = level.toUpperCase();
                     Pattern logPattern = Pattern.compile(
-                            "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{3} \\[.*?\\] " + logLevel + " ");
+                            "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{3} \\[.*?\\] " +
+                                    logLevel + " ");
 
                     lines = linesStream.filter(line -> logPattern.matcher(line).find()).toList();
                 } else {
@@ -50,10 +52,10 @@ public class LogFileGenerator {
                 Files.write(outputPath, lines, StandardCharsets.UTF_8);
                 task.setFilePath(outputPath);
                 task.setStatus("COMPLETED");
-                logger.info("Log file generation completed for task {}", task.getTaskId());
+                LOGGER.info("Log file generation completed for task {}", task.getTaskId());
             }
         } catch (IOException e) {
-            logger.error("Error generating log file for task {}: {}", task.getTaskId(), e.getMessage());
+            LOGGER.error("Error generating log file for task {}: {}", task.getTaskId(), e.getMessage());
             task.setStatus("FAILED");
             task.setErrorMessage("Failed to generate log file: " + e.getMessage());
         }

@@ -1,0 +1,38 @@
+/* src/styles/SchedulePage.css */
+.schedule-page-container {
+    /* Если нужны специфичные отступы для всей страницы расписания */
+}
+
+.page-header-controls {
+    display: flex; /* Включаем Flexbox */
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    align-items: center; /* Выравнивает элементы по вертикали по центру */
+    margin-bottom: 20px; /* Отступ снизу до таблицы */
+}
+
+.page-title {
+    margin: 0;
+}
+
+.page-header-button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, transform 0.1s ease-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.page-header-button:hover {
+    background-color: #5e0fa9;
+    transform: translateY(-1px);
+}
+
+.page-header-button:active {
+    background-color: #530e97;
+    transform: translateY(0px);
+}

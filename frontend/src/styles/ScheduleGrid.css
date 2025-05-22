@@ -1,0 +1,147 @@
+.schedule-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 30px auto;
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+/* Колонка времени */
+.time-header {
+    width: 80px;
+    background: #6a11cb;
+    color: white;
+    text-align: center;
+}
+
+.time-cell {
+    width: 80px;
+    padding: 10px;
+    background: #f8f9fa;
+    font-weight: 500;
+    border-right: 2px solid #e0e0e0;
+    text-align: center;
+}
+
+/* Колонки дней */
+.schedule-table th:not(.time-header) {
+    width: calc((100% - 80px) / 7);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.day-cell {
+    width: calc((100% - 80px) / 7);
+    height: 60px;
+    padding: 8px;
+    border: 1px solid #f0f0f0;
+    vertical-align: top;
+    /* --- ДОБАВЛЕНО --- */
+    transition: background-color 0.2s ease-out; /* Плавный переход для цвета фона */
+}
+
+/* Стили ячеек */
+.occupied {
+    background: #f0f7ff;
+    cursor: pointer;
+    /* transition: all 0.2s; Убрали, так как общая transition в .day-cell для background-color */
+}
+
+.empty {
+    background: #fafafa;
+    cursor: pointer;
+}
+
+/* --- ИЗМЕНЕНИЯ ЗДЕСЬ --- */
+.occupied:hover {
+    background: #d0e3ff; /* Новый цвет для занятой ячейки при наведении */
+    /* transform: scale(1.02); Убрали, если нужна только смена цвета */
+}
+
+.empty:hover {
+    background: #e9ecef; /* Новый цвет для пустой ячейки при наведении */
+}
+
+.schedule-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.group-name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.trainer-name {
+    font-size: 12px;
+    color: #4a5568;
+}
+
+/* Адаптация */
+@media (max-width: 768px) {
+    .time-header, .time-cell {
+        width: 60px;
+        font-size: 14px;
+    }
+
+    .day-cell {
+        height: 50px;
+        padding: 5px;
+    }
+}
+
+.schedule-actions {
+    margin-bottom: 20px; /* Отступ от кнопки до таблицы */
+    display: flex; /* Для выравнивания кнопки, если их будет несколько */
+    justify-content: flex-start; /* Выравнивание кнопки по левому краю */
+}
+
+.add-group-button {
+    background-color: #6a11cb; /* Основной цвет вашей темы */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px; /* Скругление углов как у .schedule-container */
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, transform 0.1s ease-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.add-group-button:hover {
+    background-color: #5e0fa9; /* Цвет при наведении (темнее) */
+    transform: translateY(-1px); /* Легкий эффект "приподнимания" */
+}
+
+.add-group-button:active {
+    background-color: #530e97; /* Цвет при нажатии (еще темнее) */
+    transform: translateY(0px);
+}
+
+
+/* Изменение для .schedule-container, если внешний margin убрали */
+.schedule-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* margin: 30px auto; Убираем, если .schedule-grid-wrapper теперь управляет этим */
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}

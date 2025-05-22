@@ -1,5 +1,0 @@
-2025-05-13 17:53:36.830 [http-nio-8080-exec-9] ERROR c.b.d.api.controller.LogController - Error downloading log file: logs\task-e8bacc88-18d3-4b71-8926-a6f235eae654-2025-05-13-WARN.log
-2025-05-13 17:53:39.734 [http-nio-8080-exec-2] ERROR c.b.d.api.controller.LogController - Error downloading log file: logs\task-e8bacc88-18d3-4b71-8926-a6f235eae654-2025-05-13-WARN.log
-2025-05-13 17:53:58.139 [http-nio-8080-exec-1] ERROR c.b.d.api.controller.LogController - Error downloading log file: logs\task-e8bacc88-18d3-4b71-8926-a6f235eae654-2025-05-13-WARN.log
-2025-05-13 18:14:56.355 [http-nio-8080-exec-6] ERROR c.b.d.core.aspect.LoggingAspect - Error in: Hall com.bootgussy.dancecenterservice.core.service.impl.HallServiceImpl.findHallById(Long) - Hall not found. ID: 11
-2025-05-13 18:15:09.468 [http-nio-8080-exec-9] ERROR c.b.d.core.aspect.LoggingAspect - Error in: Hall com.bootgussy.dancecenterservice.core.service.impl.HallServiceImpl.findHallById(Long) - Hall not found. ID: 11

@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/logs")
 public class LogController {
     private final LogFileId logFileId;
-    private static final Logger logger = LoggerFactory.getLogger(LogController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(LogController.class);
 
     public LogController(LogFileId logFileId) {
         this.logFileId = logFileId;
@@ -38,13 +38,13 @@ public class LogController {
             @RequestParam String date,
             @RequestParam(required = false, defaultValue = "all") String level) {
         if (!date.matches("\\d{4}-\\d{2}-\\d{2}")) {
-            logger.warn("Invalid date format: {}", date);
+            LOGGER.warn("Invalid date format: {}", date);
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
 
         String logFileName = "logs/dance_center-" + date + ".0.log";
         Path logFilePath = Path.of(logFileName).normalize();
-        logger.info("Checking for log file at: {}", logFilePath);
+        LOGGER.info("Checking for log file at: {}", logFilePath);
 
         if (Files.exists(logFilePath)) {
             try (var linesStream = Files.lines(logFilePath, StandardCharsets.UTF_8)) {
@@ -53,27 +53,29 @@ public class LogController {
                 if (!"all".equalsIgnoreCase(level)) {
                     String logLevel = level.toUpperCase();
                     var logPattern = Pattern.compile(
-                            "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{3} \\[.*?\\] " + logLevel + " ");
+                            "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{3} \\[.*?\\] " +
+                                    logLevel + " ");
 
                     lines = linesStream.filter(line -> logPattern.matcher(line).find()).toList();
                 } else {
                     lines = linesStream.toList();
                 }
 
-                byte[] logFileBytes = String.join("\n", lines).getBytes(StandardCharsets.UTF_8);
-
                 HttpHeaders headers = new HttpHeaders();
                 headers.setContentType(MediaType.TEXT_PLAIN);
-                headers.setContentDispositionFormData("attachment", "dance_center-" + date + "-" + level + ".log");
+                headers.setContentDispositionFormData("attachment", "dance_center-" + date +
+                        "-" + level + ".log");
 
-                logger.info("Log file retrieved successfully: {}", logFileName);
+                byte[] logFileBytes = String.join("\n", lines).getBytes(StandardCharsets.UTF_8);
+
+                LOGGER.info("Log file retrieved successfully: {}", logFileName);
                 return new ResponseEntity<>(logFileBytes, headers, HttpStatus.OK);
             } catch (IOException e) {
-                logger.error("Error reading log file: {}", e.getMessage());
+                LOGGER.error("Error reading log file: {}", e.getMessage());
                 return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
             }
         } else {
-            logger.warn("Log file not found: {}", logFileName);
+            LOGGER.warn("Log file not found: {}", logFileName);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
@@ -84,12 +86,12 @@ public class LogController {
             @RequestParam String date,
             @RequestParam(required = false, defaultValue = "all") String level) {
         if (!date.matches("\\d{4}-\\d{2}-\\d{2}")) {
-            logger.warn("Invalid date format for task creation: {}", date);
+            LOGGER.warn("Invalid date format for task creation: {}", date);
             return new ResponseEntity<>("Invalid date format", HttpStatus.BAD_REQUEST);
         }
 
         String taskId = logFileId.createLogFileTask(date, level);
-        logger.info("Log file generation task created with ID: {}", taskId);
+        LOGGER.info("Log file generation task created with ID: {}", taskId);
         return new ResponseEntity<>(taskId, HttpStatus.ACCEPTED);
     }
 
@@ -98,10 +100,10 @@ public class LogController {
     public ResponseEntity<LogFileTask> getTaskStatus(@PathVariable String taskId) {
         LogFileTask task = logFileId.getTaskStatus(taskId);
         if (task == null) {
-            logger.warn("Task not found");
+            LOGGER.warn("Task not found");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        logger.info("Task status retrieved");
+        LOGGER.info("Task status retrieved");
         return new ResponseEntity<>(task, HttpStatus.OK);
     }
 
@@ -110,19 +112,19 @@ public class LogController {
     public ResponseEntity<byte[]> downloadLogFile(@PathVariable String taskId) {
         Path filePath = logFileId.getLogFilePath(taskId);
         if (filePath == null) {
-            logger.warn("Log file not found");
+            LOGGER.warn("Log file not found");
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
         try {
-            byte[] fileBytes = Files.readAllBytes(filePath);
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.TEXT_PLAIN);
             headers.setContentDispositionFormData("attachment", filePath.getFileName().toString());
-            logger.info("Log file downloaded successfully: {}", filePath.getFileName());
+            LOGGER.info("Log file downloaded successfully: {}", filePath.getFileName());
+            byte[] fileBytes = Files.readAllBytes(filePath);
             return new ResponseEntity<>(fileBytes, headers, HttpStatus.OK);
         } catch (IOException e) {
-            logger.error("Error downloading log file: {}", e.getMessage());
+            LOGGER.error("Error downloading log file: {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

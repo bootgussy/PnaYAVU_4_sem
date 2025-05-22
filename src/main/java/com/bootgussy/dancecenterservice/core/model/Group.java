@@ -38,12 +38,12 @@ public class Group {
     @Column(name = "difficulty")
     private String difficulty;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "trainer_id", nullable = false)
     @JsonManagedReference
     private Trainer trainer;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST }, fetch = FetchType.LAZY)
     @JoinTable(
             name = "group_students",
             joinColumns = @JoinColumn(name = "group_id"),

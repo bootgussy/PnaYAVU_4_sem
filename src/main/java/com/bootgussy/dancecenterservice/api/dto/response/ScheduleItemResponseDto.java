@@ -1,3 +1,4 @@
+
 package com.bootgussy.dancecenterservice.api.dto.response;
 
 import java.time.LocalTime;
@@ -15,9 +16,9 @@ import lombok.Setter;
 public class ScheduleItemResponseDto {
     private Long id;
 
-    private Long hallId;
+    private HallResponseDto hall;
 
-    private Long groupId;
+    private GroupResponseDto group;
 
     private String dayOfWeek;
 

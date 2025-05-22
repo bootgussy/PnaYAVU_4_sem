@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface HallRepository extends JpaRepository<Hall, Long> {
     Optional<Hall> findByName(String name);
+
+    Optional<Hall> findByNameAndArea(String name, Integer area);
 }

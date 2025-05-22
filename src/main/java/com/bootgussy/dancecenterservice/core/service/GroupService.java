@@ -8,6 +8,8 @@ public interface GroupService {
 
     List<Group> findAllGroups();
 
+    List<Group> findAllGroupsByDanceStyle(String danceStyle);
+
     Group createGroup(Group group);
 
     Group updateGroup(Group group);

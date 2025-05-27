@@ -10,9 +10,9 @@
 .navbar {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     box-shadow: var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    position: sticky; /* <--- Уже есть */
+    top: 0;           /* <--- Уже есть, для прилипания к верху */
+    z-index: 1100;    /* <--- Уже есть */
     padding: 0.8rem 2rem;
 }
 

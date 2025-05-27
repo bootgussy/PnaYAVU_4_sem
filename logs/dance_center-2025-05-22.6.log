@@ -9463,3 +9463,804 @@
 2025-05-22 14:12:18.078 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
 2025-05-22 14:12:48.093 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
 2025-05-22 14:12:48.093 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:13:18.103 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:13:18.103 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:13:48.107 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:13:48.107 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:14:18.122 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:14:18.122 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:14:48.131 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:14:48.131 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:15:18.138 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:15:18.138 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:15:48.144 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:15:48.144 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:16:18.147 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:16:18.147 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:16:48.158 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:16:48.158 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:17:18.171 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:17:18.172 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:17:48.175 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:17:48.175 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:18:18.183 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:18:18.183 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:18:48.185 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:18:48.185 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:19:18.200 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:19:18.200 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:19:48.204 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:19:48.204 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:20:18.211 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:20:18.211 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:20:48.225 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:20:48.225 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:21:18.226 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:21:18.226 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:21:48.231 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:21:48.232 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:22:18.243 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:22:18.243 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:22:48.246 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:22:48.246 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:23:18.255 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:23:18.255 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:23:48.259 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:23:48.259 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:24:18.265 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:24:18.265 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:24:48.271 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:24:48.271 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:25:18.274 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:25:18.274 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:25:48.279 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:25:48.279 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:26:18.286 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:26:18.286 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:26:48.301 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:26:48.301 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:27:18.302 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:27:18.302 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:27:48.308 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:27:48.308 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:28:18.321 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:28:18.321 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:28:48.334 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:28:48.334 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:29:10.477 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@528ef51c: (connection has passed maxLifetime)
+2025-05-22 14:29:10.485 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ca00a3a
+2025-05-22 14:29:10.523 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:14.854 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1d7402f9: (connection has passed maxLifetime)
+2025-05-22 14:29:14.862 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3267e3de
+2025-05-22 14:29:14.899 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:17.537 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@32a10a53: (connection has passed maxLifetime)
+2025-05-22 14:29:17.545 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3658614a
+2025-05-22 14:29:17.583 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:18.335 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:18.335 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:29:20.793 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6316c674: (connection has passed maxLifetime)
+2025-05-22 14:29:20.802 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@735ae9e5
+2025-05-22 14:29:20.840 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:22.344 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@adf8138: (connection has passed maxLifetime)
+2025-05-22 14:29:22.353 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f17cc6e
+2025-05-22 14:29:22.391 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:32.531 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5f2fd9cf: (connection has passed maxLifetime)
+2025-05-22 14:29:32.539 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2f4d911
+2025-05-22 14:29:32.576 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:33.382 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@17222bbe: (connection has passed maxLifetime)
+2025-05-22 14:29:33.389 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c33373f
+2025-05-22 14:29:33.428 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:39.088 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6f50467e: (connection has passed maxLifetime)
+2025-05-22 14:29:39.089 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@178c6989: (connection has passed maxLifetime)
+2025-05-22 14:29:39.096 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@305d6159
+2025-05-22 14:29:39.133 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=9, active=0, idle=9, waiting=0)
+2025-05-22 14:29:39.141 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e9a8922
+2025-05-22 14:29:39.178 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:39.178 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:39.178 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:43.530 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@13b3ff27: (connection has passed maxLifetime)
+2025-05-22 14:29:43.540 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3aa50a29
+2025-05-22 14:29:43.578 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:48.336 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:29:48.336 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:30:18.343 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:30:18.343 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:30:48.348 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:30:48.348 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:31:18.361 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:31:18.361 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:31:48.368 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:31:48.368 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:32:18.382 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:32:18.382 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:32:48.388 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:32:48.388 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:33:18.391 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:33:18.391 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:33:48.401 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:33:48.401 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:34:18.414 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:34:18.416 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:34:48.426 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:34:48.426 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:35:18.438 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:35:18.438 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:35:48.441 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:35:48.441 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:36:18.453 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:36:18.454 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:36:48.464 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:36:48.464 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:37:18.473 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:37:18.473 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:37:48.482 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:37:48.482 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:38:18.483 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:38:18.483 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:38:48.485 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:38:48.486 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:39:18.491 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:39:18.491 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:39:48.505 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:39:48.505 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:40:18.515 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:40:18.515 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:40:48.522 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:40:48.523 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:41:18.534 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:41:18.534 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:41:48.541 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:41:48.541 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:42:18.546 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:42:18.546 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:42:48.546 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:42:48.546 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:43:18.553 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:43:18.554 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:43:48.568 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:43:48.568 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:44:18.571 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:44:18.572 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:44:48.585 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:44:48.585 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:45:18.586 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:45:18.586 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:45:48.600 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:45:48.600 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:46:18.608 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:46:18.608 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:46:48.611 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:46:48.611 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:47:18.622 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:47:18.622 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:47:48.634 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:47:48.634 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:48:18.641 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:48:18.641 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:48:48.648 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:48:48.648 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:49:18.663 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:49:18.663 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:49:48.669 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:49:48.670 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:50:18.677 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:50:18.678 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:50:48.686 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:50:48.686 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:51:18.693 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:51:18.693 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:51:48.700 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:51:48.700 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:52:18.706 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:52:18.706 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:52:48.707 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:52:48.707 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:53:18.723 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:53:18.723 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:53:48.737 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:53:48.737 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:54:12.514 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/schedule_item", parameters={}
+2025-05-22 14:54:12.514 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/group", parameters={}
+2025-05-22 14:54:12.514 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/hall", parameters={}
+2025-05-22 14:54:12.517 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.bootgussy.dancecenterservice.api.controller.ScheduleItemController#findAllScheduleItems()
+2025-05-22 14:54:12.517 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.bootgussy.dancecenterservice.api.controller.HallController#findAllHalls()
+2025-05-22 14:54:12.517 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.bootgussy.dancecenterservice.api.controller.GroupController#findAllGroups()
+2025-05-22 14:54:12.522 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.522 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.522 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.527 [http-nio-8080-exec-2] INFO  c.b.d.core.aspect.LoggingAspect - Executing: List com.bootgussy.dancecenterservice.core.service.impl.GroupServiceImpl.findAllGroups()
+2025-05-22 14:54:12.529 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1739116222<open>)] for JPA transaction
+2025-05-22 14:54:12.531 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-05-22 14:54:12.531 [http-nio-8080-exec-8] INFO  c.b.d.core.aspect.LoggingAspect - Executing: List com.bootgussy.dancecenterservice.core.service.impl.HallServiceImpl.findAllHalls()
+2025-05-22 14:54:12.531 [http-nio-8080-exec-4] INFO  c.b.d.core.aspect.LoggingAspect - Executing: List com.bootgussy.dancecenterservice.core.service.impl.ScheduleItemServiceImpl.findAllScheduleItems()
+2025-05-22 14:54:12.532 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(309290354<open>)] for JPA transaction
+2025-05-22 14:54:12.532 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1566811282<open>)] for JPA transaction
+2025-05-22 14:54:12.532 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-05-22 14:54:12.532 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-05-22 14:54:12.534 [http-nio-8080-exec-2] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@1925978190 wrapping org.postgresql.jdbc.PgConnection@3ca00a3a] read-only
+2025-05-22 14:54:12.534 [http-nio-8080-exec-4] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@1978788002 wrapping org.postgresql.jdbc.PgConnection@3267e3de] read-only
+2025-05-22 14:54:12.534 [http-nio-8080-exec-8] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@25908962 wrapping org.postgresql.jdbc.PgConnection@3658614a] read-only
+2025-05-22 14:54:12.536 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-22 14:54:12.536 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-22 14:54:12.536 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-22 14:54:12.536 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - begin
+2025-05-22 14:54:12.536 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - begin
+2025-05-22 14:54:12.536 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - begin
+2025-05-22 14:54:12.536 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@26e20a40]
+2025-05-22 14:54:12.536 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@56792b77]
+2025-05-22 14:54:12.536 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5f793178]
+2025-05-22 14:54:12.542 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : si1_0
+2025-05-22 14:54:12.542 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : g1_0
+2025-05-22 14:54:12.542 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : h1_0
+2025-05-22 14:54:12.542 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(com.bootgussy.dancecenterservice.core.model.Hall(4044))] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.Hall] for NavigablePath [com.bootgussy.dancecenterservice.core.model.Hall] 
+2025-05-22 14:54:12.542 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042))] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.ScheduleItem] for NavigablePath [com.bootgussy.dancecenterservice.core.model.ScheduleItem] 
+2025-05-22 14:54:12.542 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(com.bootgussy.dancecenterservice.core.model.Group(4043))] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.Group] for NavigablePath [com.bootgussy.dancecenterservice.core.model.Group] 
+2025-05-22 14:54:12.545 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@6e14010a] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).group] for NavigablePath [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).group] 
+2025-05-22 14:54:12.545 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@5a684651] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.Group(4043).trainer] for NavigablePath [com.bootgussy.dancecenterservice.core.model.Group(4043).trainer] 
+2025-05-22 14:54:12.545 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [com.bootgussy.dancecenterservice.core.model.Hall(4044)]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.Hall(4044).area]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.Hall(4044).name]
+ |  \-DelayedCollectionFetch [com.bootgussy.dancecenterservice.core.model.Hall(4044).scheduleItems]
+
+2025-05-22 14:54:12.545 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [com.bootgussy.dancecenterservice.core.model.Group(4043)]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.Group(4043).difficulty]
+ |  +-DelayedCollectionFetch [com.bootgussy.dancecenterservice.core.model.Group(4043).scheduleItems]
+ |  +-DelayedCollectionFetch [com.bootgussy.dancecenterservice.core.model.Group(4043).students]
+ |  \-CircularFetchImpl [com.bootgussy.dancecenterservice.core.model.Group(4043).trainer]
+
+2025-05-22 14:54:12.546 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (g1 : com.bootgussy.dancecenterservice.core.model.Group(4043)) {
+          primaryTableReference : groups as g1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (t1 : com.bootgussy.dancecenterservice.core.model.Group(4043).trainer) {
+            }
+          }
+        }
+      }
+    }
+
+2025-05-22 14:54:12.546 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (h1 : com.bootgussy.dancecenterservice.core.model.Hall(4044)) {
+          primaryTableReference : halls as h1_0
+        }
+      }
+    }
+
+2025-05-22 14:54:12.546 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@5fb778f8] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).hall] for NavigablePath [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).hall] 
+2025-05-22 14:54:12.546 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042)]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).dayOfWeek]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).endTime]
+ |  +-CircularFetchImpl [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).group]
+ |  +-CircularFetchImpl [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).hall]
+ |  \-BasicFetch [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).startTime]
+
+2025-05-22 14:54:12.546 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (si1 : com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042)) {
+          primaryTableReference : schedule as si1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (g1 : com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).group) {
+            }
+            left  join LazyTableGroup (h1 : com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).hall) {
+            }
+          }
+        }
+      }
+    }
+
+2025-05-22 14:54:12.546 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-22 14:54:12.546 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-22 14:54:12.546 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-22 14:54:12.547 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select g1_0.id,g1_0.difficulty,g1_0.trainer_id from groups g1_0
+2025-05-22 14:54:12.547 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.hall_id,si1_0.start_time from schedule si1_0
+2025-05-22 14:54:12.547 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - select h1_0.id,h1_0.area,h1_0.name from halls h1_0
+2025-05-22 14:54:12.557 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.results - Initializer list:
+	  com.bootgussy.dancecenterservice.core.model.Group(4043).students -> DelayedCollectionInitializer(com.bootgussy.dancecenterservice.core.model.Group(4043).students)@789579209 (PluralAttribute(com.bootgussy.dancecenterservice.core.model.Group.students))
+	  com.bootgussy.dancecenterservice.core.model.Group(4043).trainer -> EntityDelayedFetchInitializer(com.bootgussy.dancecenterservice.core.model.Group(4043).trainer)@936547508 (ToOneAttributeMapping(NavigableRole[com.bootgussy.dancecenterservice.core.model.Group.trainer])@1845641768)
+	  com.bootgussy.dancecenterservice.core.model.Group(4043).scheduleItems -> DelayedCollectionInitializer(com.bootgussy.dancecenterservice.core.model.Group(4043).scheduleItems)@279186262 (PluralAttribute(com.bootgussy.dancecenterservice.core.model.Group.scheduleItems))
+	  com.bootgussy.dancecenterservice.core.model.Group(4043) -> EntityJoinedFetchInitializer(com.bootgussy.dancecenterservice.core.model.Group(4043))@1093829516 (SingleTableEntityPersister(com.bootgussy.dancecenterservice.core.model.Group))
+
+2025-05-22 14:54:12.557 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.results - Initializer list:
+	  com.bootgussy.dancecenterservice.core.model.Hall(4044).scheduleItems -> DelayedCollectionInitializer(com.bootgussy.dancecenterservice.core.model.Hall(4044).scheduleItems)@1592596652 (PluralAttribute(com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems))
+	  com.bootgussy.dancecenterservice.core.model.Hall(4044) -> EntityJoinedFetchInitializer(com.bootgussy.dancecenterservice.core.model.Hall(4044))@1234205052 (SingleTableEntityPersister(com.bootgussy.dancecenterservice.core.model.Hall))
+
+2025-05-22 14:54:12.557 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.results - Initializer list:
+	  com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).hall -> EntityDelayedFetchInitializer(com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).hall)@308219880 (ToOneAttributeMapping(NavigableRole[com.bootgussy.dancecenterservice.core.model.ScheduleItem.hall])@291609272)
+	  com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042) -> EntityJoinedFetchInitializer(com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042))@1984677347 (SingleTableEntityPersister(com.bootgussy.dancecenterservice.core.model.ScheduleItem))
+	  com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).group -> EntityDelayedFetchInitializer(com.bootgussy.dancecenterservice.core.model.ScheduleItem(4042).group)@682036214 (ToOneAttributeMapping(NavigableRole[com.bootgussy.dancecenterservice.core.model.ScheduleItem.group])@1890754665)
+
+2025-05-22 14:54:12.560 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-05-22 14:54:12.560 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-05-22 14:54:12.560 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1739116222<open>)]
+2025-05-22 14:54:12.560 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1566811282<open>)]
+2025-05-22 14:54:12.560 [http-nio-8080-exec-2] DEBUG o.h.e.t.internal.TransactionImpl - committing
+2025-05-22 14:54:12.560 [http-nio-8080-exec-8] DEBUG o.h.e.t.internal.TransactionImpl - committing
+2025-05-22 14:54:12.562 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-05-22 14:54:12.562 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(309290354<open>)]
+2025-05-22 14:54:12.562 [http-nio-8080-exec-4] DEBUG o.h.e.t.internal.TransactionImpl - committing
+2025-05-22 14:54:12.562 [http-nio-8080-exec-8] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@25908962 wrapping org.postgresql.jdbc.PgConnection@3658614a]
+2025-05-22 14:54:12.562 [http-nio-8080-exec-2] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1925978190 wrapping org.postgresql.jdbc.PgConnection@3ca00a3a]
+2025-05-22 14:54:12.562 [http-nio-8080-exec-2] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-05-22 14:54:12.562 [http-nio-8080-exec-8] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-05-22 14:54:12.562 [http-nio-8080-exec-2] INFO  c.b.d.core.aspect.LoggingAspect - Completed: List com.bootgussy.dancecenterservice.core.service.impl.GroupServiceImpl.findAllGroups()
+2025-05-22 14:54:12.562 [http-nio-8080-exec-8] INFO  c.b.d.core.aspect.LoggingAspect - Completed: List com.bootgussy.dancecenterservice.core.service.impl.HallServiceImpl.findAllHalls()
+2025-05-22 14:54:12.562 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.562 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.562 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select si1_0.group_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.hall_id,si1_0.start_time from schedule si1_0 where si1_0.group_id=?
+2025-05-22 14:54:12.562 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - select si1_0.hall_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.start_time from schedule si1_0 where si1_0.hall_id=?
+2025-05-22 14:54:12.562 [http-nio-8080-exec-4] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1978788002 wrapping org.postgresql.jdbc.PgConnection@3267e3de]
+2025-05-22 14:54:12.562 [http-nio-8080-exec-4] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-05-22 14:54:12.563 [http-nio-8080-exec-4] INFO  c.b.d.core.aspect.LoggingAspect - Completed: List com.bootgussy.dancecenterservice.core.service.impl.ScheduleItemServiceImpl.findAllScheduleItems()
+2025-05-22 14:54:12.563 [http-nio-8080-exec-4] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Hall#8]
+2025-05-22 14:54:12.563 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.563 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select h1_0.id,h1_0.area,h1_0.name from halls h1_0 where h1_0.id=?
+2025-05-22 14:54:12.566 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.scheduleItems#25]
+2025-05-22 14:54:12.566 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.566 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select s1_0.group_id,s1_1.id,s1_1.name,s1_1.phone_number from group_students s1_0 join students s1_1 on s1_1.id=s1_0.student_id where s1_0.group_id=?
+2025-05-22 14:54:12.567 [http-nio-8080-exec-8] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems#8]
+2025-05-22 14:54:12.567 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.567 [http-nio-8080-exec-8] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.567 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select si1_0.hall_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.start_time from schedule si1_0 where si1_0.hall_id=?
+2025-05-22 14:54:12.567 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - select si1_0.hall_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.start_time from schedule si1_0 where si1_0.hall_id=?
+2025-05-22 14:54:12.568 [http-nio-8080-exec-4] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems#8]
+2025-05-22 14:54:12.568 [http-nio-8080-exec-8] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems#13]
+2025-05-22 14:54:12.568 [http-nio-8080-exec-4] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Group#26]
+2025-05-22 14:54:12.568 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.568 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select g1_0.id,g1_0.difficulty,g1_0.trainer_id from groups g1_0 where g1_0.id=?
+2025-05-22 14:54:12.569 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.students#25]
+2025-05-22 14:54:12.569 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.569 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.570 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.570 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select si1_0.group_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.hall_id,si1_0.start_time from schedule si1_0 where si1_0.group_id=?
+2025-05-22 14:54:12.571 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#18]
+2025-05-22 14:54:12.571 [http-nio-8080-exec-2] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Trainer#11]
+2025-05-22 14:54:12.571 [http-nio-8080-exec-4] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.scheduleItems#26]
+2025-05-22 14:54:12.571 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.571 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.dance_style,t1_0.name,t1_0.phone_number from trainers t1_0 where t1_0.id=?
+2025-05-22 14:54:12.571 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.571 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select s1_0.group_id,s1_1.id,s1_1.name,s1_1.phone_number from group_students s1_0 join students s1_1 on s1_1.id=s1_0.student_id where s1_0.group_id=?
+2025-05-22 14:54:12.571 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-22 14:54:12.571 [http-nio-8080-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.bootgussy.dancecenterservice.api.dto.response.HallResponseDto@6ced0a8e, com.bootgussy.dancecent (truncated)...]
+2025-05-22 14:54:12.572 [http-nio-8080-exec-4] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.students#26]
+2025-05-22 14:54:12.573 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.573 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.573 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.573 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select g1_0.trainer_id,g1_0.id,g1_0.difficulty from groups g1_0 where g1_0.trainer_id=?
+2025-05-22 14:54:12.573 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Trainer.groups#11]
+2025-05-22 14:54:12.574 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.574 [http-nio-8080-exec-4] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#16]
+2025-05-22 14:54:12.574 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select si1_0.group_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.hall_id,si1_0.start_time from schedule si1_0 where si1_0.group_id=?
+2025-05-22 14:54:12.574 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.574 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.574 [http-nio-8080-exec-8] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.574 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-22 14:54:12.575 [http-nio-8080-exec-4] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#25]
+2025-05-22 14:54:12.575 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.scheduleItems#26]
+2025-05-22 14:54:12.575 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.575 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select s1_0.group_id,s1_1.id,s1_1.name,s1_1.phone_number from group_students s1_0 join students s1_1 on s1_1.id=s1_0.student_id where s1_0.group_id=?
+2025-05-22 14:54:12.575 [http-nio-8080-exec-4] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Trainer#8]
+2025-05-22 14:54:12.575 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.575 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.dance_style,t1_0.name,t1_0.phone_number from trainers t1_0 where t1_0.id=?
+2025-05-22 14:54:12.577 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.students#26]
+2025-05-22 14:54:12.577 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.577 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/hall", parameters={}
+2025-05-22 14:54:12.577 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select g1_0.trainer_id,g1_0.id,g1_0.difficulty from groups g1_0 where g1_0.trainer_id=?
+2025-05-22 14:54:12.577 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.577 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.577 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.bootgussy.dancecenterservice.api.controller.HallController#findAllHalls()
+2025-05-22 14:54:12.577 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.578 [http-nio-8080-exec-1] INFO  c.b.d.core.aspect.LoggingAspect - Executing: List com.bootgussy.dancecenterservice.core.service.impl.HallServiceImpl.findAllHalls()
+2025-05-22 14:54:12.578 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1359366313<open>)] for JPA transaction
+2025-05-22 14:54:12.578 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-05-22 14:54:12.578 [http-nio-8080-exec-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@481607009 wrapping org.postgresql.jdbc.PgConnection@3658614a] read-only
+2025-05-22 14:54:12.578 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-22 14:54:12.578 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - begin
+2025-05-22 14:54:12.578 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7b64ea70]
+2025-05-22 14:54:12.579 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : h1_0
+2025-05-22 14:54:12.579 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#16]
+2025-05-22 14:54:12.579 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(com.bootgussy.dancecenterservice.core.model.Hall(4045))] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.Hall] for NavigablePath [com.bootgussy.dancecenterservice.core.model.Hall] 
+2025-05-22 14:54:12.579 [http-nio-8080-exec-4] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Trainer.groups#8]
+2025-05-22 14:54:12.579 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.579 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.579 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [com.bootgussy.dancecenterservice.core.model.Hall(4045)]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.Hall(4045).area]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.Hall(4045).name]
+ |  \-DelayedCollectionFetch [com.bootgussy.dancecenterservice.core.model.Hall(4045).scheduleItems]
+
+2025-05-22 14:54:12.579 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (h1 : com.bootgussy.dancecenterservice.core.model.Hall(4045)) {
+          primaryTableReference : halls as h1_0
+        }
+      }
+    }
+
+2025-05-22 14:54:12.579 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-22 14:54:12.579 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select h1_0.id,h1_0.area,h1_0.name from halls h1_0
+2025-05-22 14:54:12.579 [http-nio-8080-exec-4] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Hall#13]
+2025-05-22 14:54:12.579 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.579 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select h1_0.id,h1_0.area,h1_0.name from halls h1_0 where h1_0.id=?
+2025-05-22 14:54:12.580 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#25]
+2025-05-22 14:54:12.580 [http-nio-8080-exec-2] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Trainer#8]
+2025-05-22 14:54:12.580 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.580 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.dance_style,t1_0.name,t1_0.phone_number from trainers t1_0 where t1_0.id=?
+2025-05-22 14:54:12.580 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.results - Initializer list:
+	  com.bootgussy.dancecenterservice.core.model.Hall(4045).scheduleItems -> DelayedCollectionInitializer(com.bootgussy.dancecenterservice.core.model.Hall(4045).scheduleItems)@1714716371 (PluralAttribute(com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems))
+	  com.bootgussy.dancecenterservice.core.model.Hall(4045) -> EntityJoinedFetchInitializer(com.bootgussy.dancecenterservice.core.model.Hall(4045))@259198731 (SingleTableEntityPersister(com.bootgussy.dancecenterservice.core.model.Hall))
+
+2025-05-22 14:54:12.580 [http-nio-8080-exec-4] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.580 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - select si1_0.hall_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.start_time from schedule si1_0 where si1_0.hall_id=?
+2025-05-22 14:54:12.580 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-05-22 14:54:12.580 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1359366313<open>)]
+2025-05-22 14:54:12.580 [http-nio-8080-exec-1] DEBUG o.h.e.t.internal.TransactionImpl - committing
+2025-05-22 14:54:12.581 [http-nio-8080-exec-4] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems#13]
+2025-05-22 14:54:12.581 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.581 [http-nio-8080-exec-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@481607009 wrapping org.postgresql.jdbc.PgConnection@3658614a]
+2025-05-22 14:54:12.581 [http-nio-8080-exec-1] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-05-22 14:54:12.581 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select g1_0.trainer_id,g1_0.id,g1_0.difficulty from groups g1_0 where g1_0.trainer_id=?
+2025-05-22 14:54:12.581 [http-nio-8080-exec-1] INFO  c.b.d.core.aspect.LoggingAspect - Completed: List com.bootgussy.dancecenterservice.core.service.impl.HallServiceImpl.findAllHalls()
+2025-05-22 14:54:12.581 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.581 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-22 14:54:12.581 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select si1_0.hall_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.start_time from schedule si1_0 where si1_0.hall_id=?
+2025-05-22 14:54:12.582 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.bootgussy.dancecenterservice.api.dto.response.ScheduleItemResponseDto@7e874b28, com.bootgussy.d (truncated)...]
+2025-05-22 14:54:12.582 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Trainer.groups#8]
+2025-05-22 14:54:12.582 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.582 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select si1_0.group_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.hall_id,si1_0.start_time from schedule si1_0 where si1_0.group_id=?
+2025-05-22 14:54:12.583 [http-nio-8080-exec-1] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems#8]
+2025-05-22 14:54:12.583 [http-nio-8080-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.583 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - select si1_0.hall_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.start_time from schedule si1_0 where si1_0.hall_id=?
+2025-05-22 14:54:12.583 [http-nio-8080-exec-4] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.583 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-22 14:54:12.584 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.scheduleItems#27]
+2025-05-22 14:54:12.584 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.584 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select s1_0.group_id,s1_1.id,s1_1.name,s1_1.phone_number from group_students s1_0 join students s1_1 on s1_1.id=s1_0.student_id where s1_0.group_id=?
+2025-05-22 14:54:12.584 [http-nio-8080-exec-1] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems#13]
+2025-05-22 14:54:12.585 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/schedule_item", parameters={}
+2025-05-22 14:54:12.585 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-22 14:54:12.585 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.bootgussy.dancecenterservice.api.controller.ScheduleItemController#findAllScheduleItems()
+2025-05-22 14:54:12.585 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.bootgussy.dancecenterservice.api.dto.response.HallResponseDto@2a559bca, com.bootgussy.dancecent (truncated)...]
+2025-05-22 14:54:12.585 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.585 [http-nio-8080-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.585 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-22 14:54:12.585 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.students#27]
+2025-05-22 14:54:12.585 [http-nio-8080-exec-7] INFO  c.b.d.core.aspect.LoggingAspect - Executing: List com.bootgussy.dancecenterservice.core.service.impl.ScheduleItemServiceImpl.findAllScheduleItems()
+2025-05-22 14:54:12.585 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.585 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.585 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(611319372<open>)] for JPA transaction
+2025-05-22 14:54:12.585 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-05-22 14:54:12.585 [http-nio-8080-exec-7] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@1612461763 wrapping org.postgresql.jdbc.PgConnection@3267e3de] read-only
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - begin
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3392d50]
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : si1_0
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046))] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.ScheduleItem] for NavigablePath [com.bootgussy.dancecenterservice.core.model.ScheduleItem] 
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@641fb343] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).group] for NavigablePath [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).group] 
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@32b0defb] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).hall] for NavigablePath [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).hall] 
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046)]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).dayOfWeek]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).endTime]
+ |  +-CircularFetchImpl [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).group]
+ |  +-CircularFetchImpl [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).hall]
+ |  \-BasicFetch [com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).startTime]
+
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (si1 : com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046)) {
+          primaryTableReference : schedule as si1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (g1 : com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).group) {
+            }
+            left  join LazyTableGroup (h1 : com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).hall) {
+            }
+          }
+        }
+      }
+    }
+
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-22 14:54:12.586 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.hall_id,si1_0.start_time from schedule si1_0
+2025-05-22 14:54:12.587 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#17]
+2025-05-22 14:54:12.587 [http-nio-8080-exec-2] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Trainer#12]
+2025-05-22 14:54:12.587 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.587 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.dance_style,t1_0.name,t1_0.phone_number from trainers t1_0 where t1_0.id=?
+2025-05-22 14:54:12.588 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.results - Initializer list:
+	  com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).hall -> EntityDelayedFetchInitializer(com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).hall)@785702596 (ToOneAttributeMapping(NavigableRole[com.bootgussy.dancecenterservice.core.model.ScheduleItem.hall])@291609272)
+	  com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046) -> EntityJoinedFetchInitializer(com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046))@438803171 (SingleTableEntityPersister(com.bootgussy.dancecenterservice.core.model.ScheduleItem))
+	  com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).group -> EntityDelayedFetchInitializer(com.bootgussy.dancecenterservice.core.model.ScheduleItem(4046).group)@1177447844 (ToOneAttributeMapping(NavigableRole[com.bootgussy.dancecenterservice.core.model.ScheduleItem.group])@1890754665)
+
+2025-05-22 14:54:12.589 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-05-22 14:54:12.589 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(611319372<open>)]
+2025-05-22 14:54:12.589 [http-nio-8080-exec-2] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.589 [http-nio-8080-exec-7] DEBUG o.h.e.t.internal.TransactionImpl - committing
+2025-05-22 14:54:12.589 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - select g1_0.trainer_id,g1_0.id,g1_0.difficulty from groups g1_0 where g1_0.trainer_id=?
+2025-05-22 14:54:12.590 [http-nio-8080-exec-7] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@1612461763 wrapping org.postgresql.jdbc.PgConnection@3267e3de]
+2025-05-22 14:54:12.590 [http-nio-8080-exec-2] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Trainer.groups#12]
+2025-05-22 14:54:12.590 [http-nio-8080-exec-7] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-05-22 14:54:12.590 [http-nio-8080-exec-7] INFO  c.b.d.core.aspect.LoggingAspect - Completed: List com.bootgussy.dancecenterservice.core.service.impl.ScheduleItemServiceImpl.findAllScheduleItems()
+2025-05-22 14:54:12.590 [http-nio-8080-exec-7] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Hall#8]
+2025-05-22 14:54:12.590 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.590 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select h1_0.id,h1_0.area,h1_0.name from halls h1_0 where h1_0.id=?
+2025-05-22 14:54:12.590 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-22 14:54:12.590 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.bootgussy.dancecenterservice.api.dto.response.GroupResponseDto@705bb2dd, com.bootgussy.dancecen (truncated)...]
+2025-05-22 14:54:12.590 [http-nio-8080-exec-2] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.590 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-22 14:54:12.592 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/group", parameters={}
+2025-05-22 14:54:12.592 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.bootgussy.dancecenterservice.api.controller.GroupController#findAllGroups()
+2025-05-22 14:54:12.592 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.592 [http-nio-8080-exec-5] INFO  c.b.d.core.aspect.LoggingAspect - Executing: List com.bootgussy.dancecenterservice.core.service.impl.GroupServiceImpl.findAllGroups()
+2025-05-22 14:54:12.592 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Found thread-bound EntityManager [SessionImpl(1233523672<open>)] for JPA transaction
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG o.s.jdbc.datasource.DataSourceUtils - Setting JDBC Connection [HikariProxyConnection@167570451 wrapping org.postgresql.jdbc.PgConnection@3ca00a3a] read-only
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - begin
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6b6eed07]
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : g1_0
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(com.bootgussy.dancecenterservice.core.model.Group(4047))] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.Group] for NavigablePath [com.bootgussy.dancecenterservice.core.model.Group] 
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@2f1e1560] with identifierForTableGroup [com.bootgussy.dancecenterservice.core.model.Group(4047).trainer] for NavigablePath [com.bootgussy.dancecenterservice.core.model.Group(4047).trainer] 
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [com.bootgussy.dancecenterservice.core.model.Group(4047)]
+ |  +-BasicFetch [com.bootgussy.dancecenterservice.core.model.Group(4047).difficulty]
+ |  +-DelayedCollectionFetch [com.bootgussy.dancecenterservice.core.model.Group(4047).scheduleItems]
+ |  +-DelayedCollectionFetch [com.bootgussy.dancecenterservice.core.model.Group(4047).students]
+ |  \-CircularFetchImpl [com.bootgussy.dancecenterservice.core.model.Group(4047).trainer]
+
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (g1 : com.bootgussy.dancecenterservice.core.model.Group(4047)) {
+          primaryTableReference : groups as g1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (t1 : com.bootgussy.dancecenterservice.core.model.Group(4047).trainer) {
+            }
+          }
+        }
+      }
+    }
+
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-05-22 14:54:12.593 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select g1_0.id,g1_0.difficulty,g1_0.trainer_id from groups g1_0
+2025-05-22 14:54:12.595 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.595 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select si1_0.hall_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.start_time from schedule si1_0 where si1_0.hall_id=?
+2025-05-22 14:54:12.595 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.results - Initializer list:
+	  com.bootgussy.dancecenterservice.core.model.Group(4047).trainer -> EntityDelayedFetchInitializer(com.bootgussy.dancecenterservice.core.model.Group(4047).trainer)@144310952 (ToOneAttributeMapping(NavigableRole[com.bootgussy.dancecenterservice.core.model.Group.trainer])@1845641768)
+	  com.bootgussy.dancecenterservice.core.model.Group(4047) -> EntityJoinedFetchInitializer(com.bootgussy.dancecenterservice.core.model.Group(4047))@1466999758 (SingleTableEntityPersister(com.bootgussy.dancecenterservice.core.model.Group))
+	  com.bootgussy.dancecenterservice.core.model.Group(4047).scheduleItems -> DelayedCollectionInitializer(com.bootgussy.dancecenterservice.core.model.Group(4047).scheduleItems)@2063366992 (PluralAttribute(com.bootgussy.dancecenterservice.core.model.Group.scheduleItems))
+	  com.bootgussy.dancecenterservice.core.model.Group(4047).students -> DelayedCollectionInitializer(com.bootgussy.dancecenterservice.core.model.Group(4047).students)@637724894 (PluralAttribute(com.bootgussy.dancecenterservice.core.model.Group.students))
+
+2025-05-22 14:54:12.595 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Initiating transaction commit
+2025-05-22 14:54:12.595 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Committing JPA transaction on EntityManager [SessionImpl(1233523672<open>)]
+2025-05-22 14:54:12.595 [http-nio-8080-exec-5] DEBUG o.h.e.t.internal.TransactionImpl - committing
+2025-05-22 14:54:12.596 [http-nio-8080-exec-7] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems#8]
+2025-05-22 14:54:12.596 [http-nio-8080-exec-5] DEBUG o.s.jdbc.datasource.DataSourceUtils - Resetting read-only flag of JDBC Connection [HikariProxyConnection@167570451 wrapping org.postgresql.jdbc.PgConnection@3ca00a3a]
+2025-05-22 14:54:12.596 [http-nio-8080-exec-5] DEBUG o.s.orm.jpa.JpaTransactionManager - Not closing pre-bound JPA EntityManager after transaction
+2025-05-22 14:54:12.596 [http-nio-8080-exec-7] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Group#26]
+2025-05-22 14:54:12.596 [http-nio-8080-exec-5] INFO  c.b.d.core.aspect.LoggingAspect - Completed: List com.bootgussy.dancecenterservice.core.service.impl.GroupServiceImpl.findAllGroups()
+2025-05-22 14:54:12.596 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.596 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select g1_0.id,g1_0.difficulty,g1_0.trainer_id from groups g1_0 where g1_0.id=?
+2025-05-22 14:54:12.596 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.596 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select si1_0.group_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.hall_id,si1_0.start_time from schedule si1_0 where si1_0.group_id=?
+2025-05-22 14:54:12.597 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.scheduleItems#25]
+2025-05-22 14:54:12.597 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.597 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select s1_0.group_id,s1_1.id,s1_1.name,s1_1.phone_number from group_students s1_0 join students s1_1 on s1_1.id=s1_0.student_id where s1_0.group_id=?
+2025-05-22 14:54:12.598 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.598 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select si1_0.group_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.hall_id,si1_0.start_time from schedule si1_0 where si1_0.group_id=?
+2025-05-22 14:54:12.598 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.students#25]
+2025-05-22 14:54:12.599 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.599 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.600 [http-nio-8080-exec-7] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.scheduleItems#26]
+2025-05-22 14:54:12.600 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.600 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select s1_0.group_id,s1_1.id,s1_1.name,s1_1.phone_number from group_students s1_0 join students s1_1 on s1_1.id=s1_0.student_id where s1_0.group_id=?
+2025-05-22 14:54:12.600 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#18]
+2025-05-22 14:54:12.600 [http-nio-8080-exec-5] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Trainer#11]
+2025-05-22 14:54:12.600 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.600 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.dance_style,t1_0.name,t1_0.phone_number from trainers t1_0 where t1_0.id=?
+2025-05-22 14:54:12.601 [http-nio-8080-exec-7] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.students#26]
+2025-05-22 14:54:12.601 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.601 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.601 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.601 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select g1_0.trainer_id,g1_0.id,g1_0.difficulty from groups g1_0 where g1_0.trainer_id=?
+2025-05-22 14:54:12.602 [http-nio-8080-exec-7] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#16]
+2025-05-22 14:54:12.602 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.602 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.602 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Trainer.groups#11]
+2025-05-22 14:54:12.602 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.602 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select si1_0.group_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.hall_id,si1_0.start_time from schedule si1_0 where si1_0.group_id=?
+2025-05-22 14:54:12.603 [http-nio-8080-exec-7] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#25]
+2025-05-22 14:54:12.603 [http-nio-8080-exec-7] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Trainer#8]
+2025-05-22 14:54:12.603 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.603 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.dance_style,t1_0.name,t1_0.phone_number from trainers t1_0 where t1_0.id=?
+2025-05-22 14:54:12.604 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.scheduleItems#26]
+2025-05-22 14:54:12.604 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.604 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select s1_0.group_id,s1_1.id,s1_1.name,s1_1.phone_number from group_students s1_0 join students s1_1 on s1_1.id=s1_0.student_id where s1_0.group_id=?
+2025-05-22 14:54:12.605 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.605 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select g1_0.trainer_id,g1_0.id,g1_0.difficulty from groups g1_0 where g1_0.trainer_id=?
+2025-05-22 14:54:12.606 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.students#26]
+2025-05-22 14:54:12.606 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.606 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.606 [http-nio-8080-exec-7] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Trainer.groups#8]
+2025-05-22 14:54:12.606 [http-nio-8080-exec-7] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Hall#13]
+2025-05-22 14:54:12.606 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.606 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select h1_0.id,h1_0.area,h1_0.name from halls h1_0 where h1_0.id=?
+2025-05-22 14:54:12.607 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#16]
+2025-05-22 14:54:12.607 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.607 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.608 [http-nio-8080-exec-7] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.608 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - select si1_0.hall_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.group_id,si1_0.start_time from schedule si1_0 where si1_0.hall_id=?
+2025-05-22 14:54:12.608 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#25]
+2025-05-22 14:54:12.608 [http-nio-8080-exec-5] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Trainer#8]
+2025-05-22 14:54:12.608 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.608 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.dance_style,t1_0.name,t1_0.phone_number from trainers t1_0 where t1_0.id=?
+2025-05-22 14:54:12.608 [http-nio-8080-exec-7] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Hall.scheduleItems#13]
+2025-05-22 14:54:12.608 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-22 14:54:12.608 [http-nio-8080-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.bootgussy.dancecenterservice.api.dto.response.ScheduleItemResponseDto@68100744, com.bootgussy.d (truncated)...]
+2025-05-22 14:54:12.609 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.609 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select g1_0.trainer_id,g1_0.id,g1_0.difficulty from groups g1_0 where g1_0.trainer_id=?
+2025-05-22 14:54:12.609 [http-nio-8080-exec-7] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.609 [http-nio-8080-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-22 14:54:12.611 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Trainer.groups#8]
+2025-05-22 14:54:12.611 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.611 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select si1_0.group_id,si1_0.id,si1_0.day_of_week,si1_0.end_time,si1_0.hall_id,si1_0.start_time from schedule si1_0 where si1_0.group_id=?
+2025-05-22 14:54:12.612 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.scheduleItems#27]
+2025-05-22 14:54:12.612 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.612 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select s1_0.group_id,s1_1.id,s1_1.name,s1_1.phone_number from group_students s1_0 join students s1_1 on s1_1.id=s1_0.student_id where s1_0.group_id=?
+2025-05-22 14:54:12.613 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Group.students#27]
+2025-05-22 14:54:12.613 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.613 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select g1_0.student_id,g1_1.id,g1_1.difficulty,g1_1.trainer_id from group_students g1_0 join groups g1_1 on g1_1.id=g1_0.group_id where g1_0.student_id=?
+2025-05-22 14:54:12.614 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Student.groups#17]
+2025-05-22 14:54:12.614 [http-nio-8080-exec-5] DEBUG org.hibernate.internal.SessionImpl - Initializing proxy: [com.bootgussy.dancecenterservice.core.model.Trainer#12]
+2025-05-22 14:54:12.614 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.614 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select t1_0.id,t1_0.dance_style,t1_0.name,t1_0.phone_number from trainers t1_0 where t1_0.id=?
+2025-05-22 14:54:12.615 [http-nio-8080-exec-5] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-05-22 14:54:12.615 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - select g1_0.trainer_id,g1_0.id,g1_0.difficulty from groups g1_0 where g1_0.trainer_id=?
+2025-05-22 14:54:12.616 [http-nio-8080-exec-5] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.bootgussy.dancecenterservice.core.model.Trainer.groups#12]
+2025-05-22 14:54:12.616 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-22 14:54:12.616 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.bootgussy.dancecenterservice.api.dto.response.GroupResponseDto@46090619, com.bootgussy.dancecen (truncated)...]
+2025-05-22 14:54:12.617 [http-nio-8080-exec-5] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-05-22 14:54:12.617 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-05-22 14:54:18.744 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:54:18.744 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:54:48.750 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:54:48.750 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:55:18.757 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:55:18.757 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:55:48.769 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:55:48.769 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:56:18.778 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:56:18.779 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:56:48.793 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:56:48.793 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:57:18.795 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:57:18.795 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:57:48.803 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:57:48.804 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:58:18.807 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:58:18.807 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:58:27.904 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3ca00a3a: (connection has passed maxLifetime)
+2025-05-22 14:58:27.919 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6270ec54
+2025-05-22 14:58:27.963 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:58:36.046 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@735ae9e5: (connection has passed maxLifetime)
+2025-05-22 14:58:36.059 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1fb65025
+2025-05-22 14:58:36.090 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:58:48.818 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:58:48.818 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 14:58:53.335 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@c33373f: (connection has passed maxLifetime)
+2025-05-22 14:58:53.354 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5c0d2058
+2025-05-22 14:58:53.397 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:59:02.923 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3e9a8922: (connection has passed maxLifetime)
+2025-05-22 14:59:03.008 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d0122
+2025-05-22 14:59:03.046 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:59:06.953 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3aa50a29: (connection has passed maxLifetime)
+2025-05-22 14:59:06.972 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ebaff5d
+2025-05-22 14:59:07.015 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:59:07.746 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3267e3de: (connection has passed maxLifetime)
+2025-05-22 14:59:07.780 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a856a52
+2025-05-22 14:59:07.823 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:59:07.994 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2f4d911: (connection has passed maxLifetime)
+2025-05-22 14:59:08.014 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f87f566
+2025-05-22 14:59:08.057 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:59:11.941 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4f17cc6e: (connection has passed maxLifetime)
+2025-05-22 14:59:11.960 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@271b89a5
+2025-05-22 14:59:12.002 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:59:12.112 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3658614a: (connection has passed maxLifetime)
+2025-05-22 14:59:12.131 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e02da0c
+2025-05-22 14:59:12.174 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:59:18.824 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 14:59:18.824 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 15:03:14.807 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m55s982ms477µs100ns).
+2025-05-22 15:03:14.807 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@305d6159: (connection has passed maxLifetime)
+2025-05-22 15:03:14.807 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=9, active=0, idle=9, waiting=0)
+2025-05-22 15:03:14.823 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7fdb4cbb
+2025-05-22 15:03:14.854 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 15:03:14.854 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 15:03:44.813 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 15:03:44.813 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 16:57:35.220 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h53m50s407ms405µs200ns).
+2025-05-22 16:57:35.220 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 16:57:35.220 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 16:57:35.221 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6270ec54: (connection has passed maxLifetime)
+2025-05-22 16:57:35.222 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1fb65025: (connection has passed maxLifetime)
+2025-05-22 16:57:35.223 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5c0d2058: (connection has passed maxLifetime)
+2025-05-22 16:57:35.224 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@4f87f566: (connection has passed maxLifetime)
+2025-05-22 16:57:35.224 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7d0122: (connection has passed maxLifetime)
+2025-05-22 16:57:35.224 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7e02da0c: (connection has passed maxLifetime)
+2025-05-22 16:57:35.224 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@ebaff5d: (connection has passed maxLifetime)
+2025-05-22 16:57:35.224 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@a856a52: (connection has passed maxLifetime)
+2025-05-22 16:57:35.224 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@271b89a5: (connection has passed maxLifetime)
+2025-05-22 16:57:35.224 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@7fdb4cbb: (connection has passed maxLifetime)
+2025-05-22 16:57:35.259 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12733de7
+2025-05-22 16:57:35.291 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=1, active=0, idle=1, waiting=0)
+2025-05-22 16:57:35.303 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cb4d1d9
+2025-05-22 16:57:35.341 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=2, active=0, idle=2, waiting=0)
+2025-05-22 16:57:35.353 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@188b5697
+2025-05-22 16:57:35.389 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=3, active=0, idle=3, waiting=0)
+2025-05-22 16:57:35.400 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d89dbe2
+2025-05-22 16:57:35.433 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=4, active=0, idle=4, waiting=0)
+2025-05-22 16:57:35.465 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@561e49b1
+2025-05-22 16:57:35.501 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=5, active=0, idle=5, waiting=0)
+2025-05-22 16:57:35.517 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c9e60b2
+2025-05-22 16:57:35.557 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=6, active=0, idle=6, waiting=0)
+2025-05-22 16:57:35.569 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ee3ac58
+2025-05-22 16:57:35.605 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=7, active=0, idle=7, waiting=0)
+2025-05-22 16:57:35.692 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3da624ad
+2025-05-22 16:57:35.728 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=8, active=0, idle=8, waiting=0)
+2025-05-22 16:57:35.742 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1951a169
+2025-05-22 16:57:35.776 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=9, active=0, idle=9, waiting=0)
+2025-05-22 16:57:35.789 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d5c901
+2025-05-22 16:57:35.834 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 16:57:35.834 [HikariPool-1 connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Connection not added, stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 16:58:05.236 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 16:58:05.236 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 16:58:35.249 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 16:58:35.249 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 16:59:05.261 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 16:59:05.261 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 16:59:35.261 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 16:59:35.262 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 17:00:05.270 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 17:00:05.270 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-05-22 17:00:35.218 [SpringApplicationShutdownHook] DEBUG o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-05-22 17:00:35.219 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f316aeb, started on Thu May 22 03:26:01 MSK 2025
+2025-05-22 17:00:35.235 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147482623
+2025-05-22 17:00:35.241 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-22 17:00:35.254 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-22 17:00:35.254 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147481599
+2025-05-22 17:00:35.254 [tomcat-shutdown] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-05-22 17:00:35.259 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'webServerStartStop' completed its stop procedure
+2025-05-22 17:00:35.259 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 1073741823
+2025-05-22 17:00:35.259 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'taskExecutor' completed its stop procedure
+2025-05-22 17:00:35.259 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase -2147483647
+2025-05-22 17:00:35.261 [SpringApplicationShutdownHook] DEBUG o.s.c.s.DefaultLifecycleProcessor - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-05-22 17:00:35.263 [SpringApplicationShutdownHook] DEBUG o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2025-05-22 17:00:35.264 [SpringApplicationShutdownHook] DEBUG o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2025-05-22 17:00:35.265 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'taskExecutor'
+2025-05-22 17:00:35.266 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-22 17:00:35.268 [SpringApplicationShutdownHook] DEBUG o.h.internal.SessionFactoryImpl - HHH000031: Closing
+2025-05-22 17:00:35.272 [SpringApplicationShutdownHook] DEBUG o.h.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@309e34a1] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4fc8163]
+2025-05-22 17:00:35.272 [SpringApplicationShutdownHook] DEBUG o.h.s.i.AbstractServiceRegistryImpl - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2025-05-22 17:00:35.277 [SpringApplicationShutdownHook] DEBUG o.h.b.r.i.BootstrapServiceRegistryImpl - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2025-05-22 17:00:35.278 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-22 17:00:35.278 [SpringApplicationShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+2025-05-22 17:00:35.280 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@12733de7: (connection evicted)
+2025-05-22 17:00:35.281 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1cb4d1d9: (connection evicted)
+2025-05-22 17:00:35.281 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@188b5697: (connection evicted)
+2025-05-22 17:00:35.281 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@5d89dbe2: (connection evicted)
+2025-05-22 17:00:35.282 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@561e49b1: (connection evicted)
+2025-05-22 17:00:35.282 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6c9e60b2: (connection evicted)
+2025-05-22 17:00:35.282 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@2ee3ac58: (connection evicted)
+2025-05-22 17:00:35.282 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@3da624ad: (connection evicted)
+2025-05-22 17:00:35.282 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@1951a169: (connection evicted)
+2025-05-22 17:00:35.283 [HikariPool-1 connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Closing connection org.postgresql.jdbc.PgConnection@6d5c901: (connection evicted)
+2025-05-22 17:00:35.283 [SpringApplicationShutdownHook] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2025-05-22 17:00:35.283 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

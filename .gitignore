@@ -19,11 +19,11 @@ lerna-debug.log*
 !.env.example
 !.env.sample
 
-HELP.md # Если это специфичный для вашего проекта файл, который не нужен в репо
+HELP.md
 
-backend/.gradle/
-backend/build/
-!backend/gradle/wrapper/gradle-wrapper.jar
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
 *.class
 
 .apt_generated
@@ -34,13 +34,12 @@ backend/build/
 .springBeans
 .sts4-cache
 bin/
-backend/bin/
 .idea/
 *.iws
 *.iml
 *.ipr
 out/
-backend/out/
+out/
 
 ### NetBeans ###
 /nbproject/private/

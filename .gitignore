@@ -11,7 +11,7 @@ desktop.ini
 **/build/
 **/.gradle/
 !gradle/wrapper/gradle-wrapper.jar
-**/gradle/wrapper/dists/
+wrapper/dists/
 **/caches/
 **/logs/
 **/out/

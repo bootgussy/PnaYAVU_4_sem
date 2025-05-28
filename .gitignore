@@ -89,3 +89,7 @@ MJ HELP.md
 # Other
 **/daemon/
 **/native/
+
+# Gradle
+.gradle/
+caches/

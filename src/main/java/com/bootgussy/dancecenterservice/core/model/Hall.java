@@ -35,7 +35,7 @@ public class Hall {
     @Column(name = "area")
     private Integer area;
 
-    @OneToMany(mappedBy = "hall", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "hall", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonBackReference
     private List<ScheduleItem> scheduleItems;
 }

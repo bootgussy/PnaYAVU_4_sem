@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className="navbar-container">
                 <Link to="/" className="navbar-brand">
                     <span className="logo-icon">💃</span>
-                    <span className="logo-text">DanceCenter</span>
+                    <span className="logo-text">Dance Center</span>
                 </Link>
 
                 <div className="navbar-links">
@@ -30,6 +30,18 @@ const Navbar = () => {
                         className={`nav-link ${location.pathname === '/trainers' ? 'active' : ''}`}
                     >
                         Тренеры
+                    </Link>
+                    <Link
+                        to="/students"
+                        className={`nav-link ${location.pathname === '/students' ? 'active' : ''}`}
+                    >
+                        Студенты
+                    </Link>
+                    <Link
+                        to="/halls"
+                        className={`nav-link ${location.pathname === '/halls' ? 'active' : ''}`}
+                    >
+                        Залы
                     </Link>
                 </div>
             </div>

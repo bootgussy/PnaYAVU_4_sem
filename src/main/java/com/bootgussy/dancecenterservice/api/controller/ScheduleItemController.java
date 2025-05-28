@@ -1,8 +1,10 @@
 package com.bootgussy.dancecenterservice.api.controller;
 
 import com.bootgussy.dancecenterservice.api.dto.create.ScheduleItemCreateDto;
+import com.bootgussy.dancecenterservice.api.dto.response.GroupResponseDto;
 import com.bootgussy.dancecenterservice.api.dto.response.ScheduleItemResponseDto;
 import com.bootgussy.dancecenterservice.core.mapper.ScheduleItemMapper;
+import com.bootgussy.dancecenterservice.core.model.Group;
 import com.bootgussy.dancecenterservice.core.model.ScheduleItem;
 import com.bootgussy.dancecenterservice.core.service.ScheduleItemService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -50,6 +52,16 @@ public class ScheduleItemController {
     @GetMapping
     public ResponseEntity<List<ScheduleItemResponseDto>> findAllScheduleItems() {
         List<ScheduleItem> scheduleItems = scheduleItemService.findAllScheduleItems();
+        return ResponseEntity.ok(scheduleItemMapper.toResponseDtoList(scheduleItems));
+    }
+
+    @Operation(summary = "Get schedule items by group",
+            description = "Retrieves schedule items based on the specified group")
+    @ApiResponse(responseCode = "200", description = "Schedule items retrieved successfully")
+    @GetMapping("/group/{groupId}")
+    public ResponseEntity<List<ScheduleItemResponseDto>> findAllScheduleItemsByGroup(
+            @Parameter(description = "Group id", example = "0") @PathVariable Long groupId) {
+        List<ScheduleItem> scheduleItems = scheduleItemService.findAllScheduleItemsByGroup(groupId);
         return ResponseEntity.ok(scheduleItemMapper.toResponseDtoList(scheduleItems));
     }
 

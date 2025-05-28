@@ -4,6 +4,7 @@ import com.bootgussy.dancecenterservice.core.config.CacheConfig;
 import com.bootgussy.dancecenterservice.core.exception.AlreadyExistsException;
 import com.bootgussy.dancecenterservice.core.exception.IncorrectDataException;
 import com.bootgussy.dancecenterservice.core.exception.ResourceNotFoundException;
+import com.bootgussy.dancecenterservice.core.model.Group;
 import com.bootgussy.dancecenterservice.core.model.ScheduleItem;
 import com.bootgussy.dancecenterservice.core.repository.ScheduleItemRepository;
 import com.bootgussy.dancecenterservice.core.service.ScheduleItemService;
@@ -54,6 +55,11 @@ public class ScheduleItemServiceImpl implements ScheduleItemService {
                 dayOfWeek.equals("Wednesday") || dayOfWeek.equals("Thursday") ||
                 dayOfWeek.equals("Friday") || dayOfWeek.equals("Saturday") ||
                 dayOfWeek.equals("Sunday");
+    }
+
+    @Override
+    public List<ScheduleItem> findAllScheduleItemsByGroup(Long groupId) {
+        return scheduleItemRepository.findAllByGroup(groupId);
     }
 
     @Override

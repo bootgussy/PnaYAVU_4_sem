@@ -1,12 +1,56 @@
-version: '3'
+version: '3.8'
 
 services:
   postgres:
     image: 'postgres:latest'
-    container_name: 'postgres'
+    container_name: 'postgres-db'
     ports:
-      - 5432:5432
+      - "5432:5432"
     environment:
       - 'POSTGRES_USER=sa'
       - 'POSTGRES_PASSWORD='
       - 'POSTGRES_DB=java'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./
+    image: dancecenter-backend
+    container_name: dancecenter-backend-container
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-db:5432/java
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=yourStrongPassword
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+    image: dancecenter-frontend
+    container_name: dancecenter-frontend-container
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge

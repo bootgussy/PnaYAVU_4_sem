@@ -38,7 +38,7 @@ public class Group {
     @Column(name = "difficulty")
     private String difficulty;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "trainer_id", nullable = false)
     @JsonManagedReference
     private Trainer trainer;
@@ -52,7 +52,7 @@ public class Group {
     @JsonManagedReference
     private List<Student> students;
 
-    @OneToMany(mappedBy = "group", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "group", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonBackReference
     private List<ScheduleItem> scheduleItems;
 }

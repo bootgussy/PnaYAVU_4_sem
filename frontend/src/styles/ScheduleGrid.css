@@ -1,147 +1,136 @@
+/* src/styles/ScheduleGrid.css */
+
 .schedule-container {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 30px auto;
-    overflow-x: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    /* padding: 0; Убрали padding, чтобы таблица плотнее прилегала */
+    overflow: auto; /* Оставляем для скролла содержимого таблицы */
+    padding: 1px;
+    /* Flex свойства, чтобы контейнер таблицы занимал оставшееся место */
+    flex-grow: 1;
+    display: flex; /* Чтобы сама таблица внутри могла корректно растягиваться, если нужно */
+    flex-direction: column; /* Если внутри только таблица, это не так важно */
+    min-height: 0; /* Важно для flex-детей в некоторых браузерах, чтобы overflow работал корректно */
 }
 
 .schedule-table {
     width: 100%;
+    min-width: 900px;
     table-layout: fixed;
     border-collapse: collapse;
 }
 
-/* Колонка времени */
-.time-header {
-    width: 80px;
-    background: #6a11cb;
+/* Заголовки таблицы (thead) */
+.schedule-table thead tr th { /* Общие стили для всех th в thead */
+    position: sticky;
+    top: 0; /* Прилипание к верху */
     color: white;
+    font-weight: 600;
     text-align: center;
+    padding: 12px 10px;
+    border-bottom: 1px solid #4a148c; /* Темная граница под всей шапкой */
 }
 
-.time-cell {
-    width: 80px;
-    padding: 10px;
+/* Угловая ячейка "Время" в шапке */
+.schedule-table thead th.time-header {
+    width: 120px; /* Ширина колонки времени */
+    background: #5e35b1; /* Фиолетовый, чуть темнее дней */
+    left: 0; /* Прилипание слева */
+    z-index: 3; /* Выше всех остальных заголовков */
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Заголовки дней недели */
+.schedule-table thead th:not(.time-header) {
+    background: #673ab7; /* Основной фиолетовый для дней */
+    z-index: 2; /* Выше тела таблицы, но ниже time-header (если он тоже top:0) */
+    border-left: 1px solid #e0e0e0;
+}
+.schedule-table thead th:nth-of-type(2) { /* Первый день недели (после "Время") */
+    border-left: none;
+}
+
+
+/* Тело таблицы (tbody) */
+/* Ячейки с временем в теле таблицы */
+.schedule-table tbody td.time-cell {
+    width: 120px;
+    padding: 10px 5px;
     background: #f8f9fa;
     font-weight: 500;
-    border-right: 2px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
     text-align: center;
+    vertical-align: middle;
+    font-size: 0.85em;
+    position: sticky;
+    left: 0;
+    z-index: 1; /* Ниже заголовков */
 }
 
-/* Колонки дней */
-.schedule-table th:not(.time-header) {
-    width: calc((100% - 80px) / 7);
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
+/* Обычные ячейки дней */
 .day-cell {
-    width: calc((100% - 80px) / 7);
-    height: 60px;
-    padding: 8px;
-    border: 1px solid #f0f0f0;
+    height: 85px; /* Высота ячейки */
+    padding: 3px;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
     vertical-align: top;
-    /* --- ДОБАВЛЕНО --- */
-    transition: background-color 0.2s ease-out; /* Плавный переход для цвета фона */
+    transition: background-color 0.2s ease-out;
+}
+.schedule-table tbody tr td:first-child + td { /* Первая ячейка дня недели в строке (после time-cell) */
+    border-left: none;
 }
 
-/* Стили ячеек */
+
 .occupied {
-    background: #f0f7ff;
+    background: #f0f3f7;
     cursor: pointer;
-    /* transition: all 0.2s; Убрали, так как общая transition в .day-cell для background-color */
+}
+.occupied:hover {
+    background: #e4e9f0;
 }
 
 .empty {
-    background: #fafafa;
+    background: #fdfdfd;
     cursor: pointer;
 }
-
-/* --- ИЗМЕНЕНИЯ ЗДЕСЬ --- */
-.occupied:hover {
-    background: #d0e3ff; /* Новый цвет для занятой ячейки при наведении */
-    /* transform: scale(1.02); Убрали, если нужна только смена цвета */
-}
-
 .empty:hover {
-    background: #e9ecef; /* Новый цвет для пустой ячейки при наведении */
+    background: #f1f1f1; /* Чуть темнее при наведении на пустую */
 }
 
-.schedule-item {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.group-name {
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.trainer-name {
-    font-size: 12px;
-    color: #4a5568;
-}
 
 /* Адаптация */
-@media (max-width: 768px) {
-    .time-header, .time-cell {
-        width: 60px;
-        font-size: 14px;
+@media (max-width: 992px) {
+    .schedule-table thead th.time-header,
+    .schedule-table tbody td.time-cell {
+        width: 100px;
+        font-size: 0.8em;
     }
-
+    .schedule-table thead th:not(.time-header) {
+        font-size: 0.9em;
+        padding: 10px 5px;
+    }
     .day-cell {
-        height: 50px;
-        padding: 5px;
+        height: 80px;
     }
 }
 
-.schedule-actions {
-    margin-bottom: 20px; /* Отступ от кнопки до таблицы */
-    display: flex; /* Для выравнивания кнопки, если их будет несколько */
-    justify-content: flex-start; /* Выравнивание кнопки по левому краю */
-}
-
-.add-group-button {
-    background-color: #6a11cb; /* Основной цвет вашей темы */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px; /* Скругление углов как у .schedule-container */
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s ease-out, transform 0.1s ease-out;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
-}
-
-.add-group-button:hover {
-    background-color: #5e0fa9; /* Цвет при наведении (темнее) */
-    transform: translateY(-1px); /* Легкий эффект "приподнимания" */
-}
-
-.add-group-button:active {
-    background-color: #530e97; /* Цвет при нажатии (еще темнее) */
-    transform: translateY(0px);
-}
-
-
-/* Изменение для .schedule-container, если внешний margin убрали */
-.schedule-container {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    /* margin: 30px auto; Убираем, если .schedule-grid-wrapper теперь управляет этим */
-    overflow-x: auto;
-}
-
-.schedule-table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
+@media (max-width: 768px) {
+    .schedule-table {
+        min-width: 700px; /* Уменьшаем мин. ширину для мобильных */
+    }
+    .schedule-table thead th.time-header,
+    .schedule-table tbody td.time-cell {
+        width: 80px;
+        font-size: 0.75em;
+    }
+    .schedule-table thead th:not(.time-header) {
+        font-size: 0.8em;
+        padding: 8px 3px;
+    }
+    .day-cell {
+        height: 75px;
+        font-size: 0.9em;
+    }
 }

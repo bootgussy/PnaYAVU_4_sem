@@ -8,6 +8,8 @@ public interface ScheduleItemService {
 
     List<ScheduleItem> findAllScheduleItems();
 
+    List<ScheduleItem> findAllScheduleItemsByGroup(Long groupId);
+
     ScheduleItem createScheduleItem(ScheduleItem scheduleItem);
 
     List<ScheduleItem> createMultipleScheduleItems(List<ScheduleItem> scheduleItems);

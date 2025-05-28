@@ -61,11 +61,14 @@ async function request(endpoint, options = {}) {
 }
 
 export const fetchScheduleItems = async () => {
+    console.log("[API] Attempting to fetch schedule items...");
     try {
-        return await request('/schedule_item');
+        const data = await request('/schedule_item');
+        console.log("[API] Successfully fetched schedule items:", data ? data.length : 'null/undefined');
+        return data;
     } catch (error) {
-        console.error("API Ошибка (fetchScheduleItems):", error.message);
-        throw new Error(`Не удалось загрузить расписание: ${error.message}`);
+        console.error("[API] Error in fetchScheduleItems:", error.message, error.status, error.data);
+        throw error;
     }
 };
 

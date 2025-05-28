@@ -1,5 +1,5 @@
 // src/pages/SchedulePage.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import ScheduleGrid from '../components/Schedule/ScheduleGrid';
 import '../styles/SchedulePage.css';
 
@@ -7,18 +7,36 @@ const SchedulePage = ({
                           halls,
                           groups,
                           scheduleItems,
-                          isLoadingAppLevelData, // Получаем флаг из App
+                          isLoadingAppLevelData,
                           onAddSlotClick,
                           onViewItemClick,
                           onAddNewScheduleItemClick
                       }) => {
     const [selectedHallId, setSelectedHallId] = useState(null);
+    const prevHallsRef = useRef(halls);
 
     useEffect(() => {
-        if (!isLoadingAppLevelData && halls && halls.length > 0 && !selectedHallId) {
+        if (isLoadingAppLevelData) {
+            return;
+        }
+
+        if (!halls || halls.length === 0) {
+            if (selectedHallId !== null) setSelectedHallId(null);
+            prevHallsRef.current = halls;
+            return;
+        }
+
+        const currentSelectedHallStillExists = selectedHallId && halls.some(h => h.id === selectedHallId);
+
+        if (currentSelectedHallStillExists) {
+
+        } else {
             setSelectedHallId(halls[0].id);
         }
-    }, [halls, selectedHallId, isLoadingAppLevelData]);
+
+        prevHallsRef.current = halls;
+
+    }, [halls, isLoadingAppLevelData, selectedHallId]);
 
     // Если данные уровня приложения еще грузятся, или залы не загружены
     if (isLoadingAppLevelData && (!halls || halls.length === 0)) {

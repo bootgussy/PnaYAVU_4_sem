@@ -112,7 +112,8 @@ const AddScheduleModal = ({
     }, [startTime, endTime, endTimeSlots, isOpen]);
 
 
-    const handleFormSubmit = () => {
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
         setError('');
         if (!selectedGroup || !selectedGroup.id) { setError('Пожалуйста, выберите группу.'); return; }
         if (!selectedHallId) { setError('Пожалуйста, выберите зал.'); return; }
@@ -180,97 +181,99 @@ const AddScheduleModal = ({
                 </div>
                 {error && <p className="modal-error">{error}</p>}
 
-                <div className="form-group">
-                    <label htmlFor="hall">Зал:</label>
-                    <select id="hall" value={selectedHallId} onChange={(e) => setSelectedHallId(e.target.value)} >
-                        <option value="" disabled={!!selectedHallId}>Выберите зал</option>
-                        {halls.map(hall => ( <option key={hall.id} value={hall.id.toString()}>{hall.name}</option> ))}
-                    </select>
-                </div>
-
-                <div className="form-group custom-select-group" ref={groupDropdownRef}>
-                    <label htmlFor="group-custom-select-input">Группа:</label>
-                    <div
-                        className={`custom-select-input ${isGroupDropdownOpen ? 'focused' : ''}`}
-                        onClick={() => setIsGroupDropdownOpen(prev => !prev)}
-                        tabIndex={0}
-                        onKeyDown={(e) => {
-                            if (e.key === 'Enter' || e.key === ' ') {
-                                e.preventDefault();
-                                setIsGroupDropdownOpen(prev => !prev);
-                            }
-                        }}
-                    >
-                        {selectedGroup ? ( <GroupOptionContent item={{ group: selectedGroup }} /> )
-                            : ( <span className="custom-select-placeholder">Выберите группу...</span> )}
-                        <span className={`custom-select-arrow ${isGroupDropdownOpen ? 'open' : ''}`}>▼</span>
-                    </div>
-                    {isGroupDropdownOpen && (
-                        <div className="custom-select-dropdown">
-                            <input
-                                type="text"
-                                className="custom-select-search"
-                                placeholder="Поиск (название, тренер, стиль, сложность)..."
-                                value={searchTerm}
-                                onChange={(e) => setSearchTerm(e.target.value)}
-                                onClick={(e) => e.stopPropagation()}
-                                autoFocus
-                            />
-                            <div className="custom-select-options">
-                                {filteredGroups.length > 0 ? (
-                                    filteredGroups.map(group => (
-                                        <div
-                                            key={group.id}
-                                            className="custom-select-option"
-                                            onClick={() => handleGroupSelect(group)}
-                                            tabIndex={0}
-                                            onKeyDown={(e) => {
-                                                if (e.key === 'Enter') {
-                                                    e.preventDefault();
-                                                    handleGroupSelect(group);
-                                                }
-                                            }}
-                                        >
-                                            <GroupOptionContent item={{ group: group }} />
-                                        </div>
-                                    ))
-                                ) : (
-                                    <div className="custom-select-no-options">Группы не найдены</div>
-                                )}
-                            </div>
+                <form onSubmit={handleFormSubmit} className="modal-form-scrollable-content">
+                    <div className="modal-body-content">
+                        <div className="form-group">
+                            <label htmlFor="hall">Зал:</label>
+                            <select id="hall" value={selectedHallId} onChange={(e) => setSelectedHallId(e.target.value)} >
+                                <option value="" disabled={!!selectedHallId}>Выберите зал</option>
+                                {halls.map(hall => ( <option key={hall.id} value={hall.id.toString()}>{hall.name}</option> ))}
+                            </select>
                         </div>
-                    )}
 
-                </div>
+                        <div className="form-group custom-select-group" ref={groupDropdownRef}>
+                            <label htmlFor="group-custom-select-input">Группа:</label>
+                            <div
+                                className={`custom-select-input ${isGroupDropdownOpen ? 'focused' : ''}`}
+                                onClick={() => setIsGroupDropdownOpen(prev => !prev)}
+                                tabIndex={0}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' || e.key === ' ') {
+                                        e.preventDefault();
+                                        setIsGroupDropdownOpen(prev => !prev);
+                                    }
+                                }}
+                            >
+                                {selectedGroup ? ( <GroupOptionContent item={{ group: selectedGroup }} /> )
+                                    : ( <span className="custom-select-placeholder">Выберите группу...</span> )}
+                                <span className={`custom-select-arrow ${isGroupDropdownOpen ? 'open' : ''}`}>▼</span>
+                            </div>
+                            {isGroupDropdownOpen && (
+                                <div className="custom-select-dropdown">
+                                    <input
+                                        type="text"
+                                        className="custom-select-search"
+                                        placeholder="Поиск (название, тренер, стиль, сложность)..."
+                                        value={searchTerm}
+                                        onChange={(e) => setSearchTerm(e.target.value)}
+                                        onClick={(e) => e.stopPropagation()}
+                                        autoFocus
+                                    />
+                                    <div className="custom-select-options">
+                                        {filteredGroups.length > 0 ? (
+                                            filteredGroups.map(group => (
+                                                <div
+                                                    key={group.id}
+                                                    className="custom-select-option"
+                                                    onClick={() => handleGroupSelect(group)}
+                                                    tabIndex={0}
+                                                    onKeyDown={(e) => {
+                                                        if (e.key === 'Enter') {
+                                                            e.preventDefault();
+                                                            handleGroupSelect(group);
+                                                        }
+                                                    }}
+                                                >
+                                                    <GroupOptionContent item={{ group: group }} />
+                                                </div>
+                                            ))
+                                        ) : (
+                                            <div className="custom-select-no-options">Группы не найдены</div>
+                                        )}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
 
-                <div className="form-group">
-                    <label htmlFor="dayOfWeekModal">День недели:</label>
-                    <select id="dayOfWeekModal" value={dayOfWeek} onChange={(e) => setDayOfWeek(e.target.value)} >
-                        {days.map(day => ( <option key={day.value} value={day.value}>{day.label}</option> ))}
-                    </select>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="startTimeModal">Время начала:</label>
-                    <select id="startTimeModal" value={startTime} onChange={(e) => setStartTime(e.target.value)} >
-                        {timeSlots.map(time => ( <option key={time} value={time}>{time}</option> ))}
-                    </select>
-                </div>
-                <div className="form-group">
-                    <label htmlFor="endTimeModal">Время окончания:</label>
-                    <select id="endTimeModal" value={endTime} onChange={(e) => setEndTime(e.target.value)} >
+                        <div className="form-group">
+                            <label htmlFor="dayOfWeekModal">День недели:</label>
+                            <select id="dayOfWeekModal" value={dayOfWeek} onChange={(e) => setDayOfWeek(e.target.value)} >
+                                {days.map(day => ( <option key={day.value} value={day.value}>{day.label}</option> ))}
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="startTimeModal">Время начала:</label>
+                            <select id="startTimeModal" value={startTime} onChange={(e) => setStartTime(e.target.value)} >
+                                {timeSlots.map(time => ( <option key={time} value={time}>{time}</option> ))}
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="endTimeModal">Время окончания:</label>
+                            <select id="endTimeModal" value={endTime} onChange={(e) => setEndTime(e.target.value)} >
+                                {endTimeSlots.filter(time => time > startTime).map(time => (
+                                    <option key={time} value={time}>{time}</option>
+                                ))}
+                            </select>
+                        </div>
+                    </div>
 
-                        {endTimeSlots.filter(time => time > startTime).map(time => (
-                            <option key={time} value={time}>{time}</option>
-                        ))}
-                    </select>
-                </div>
-
-                <div className="modal-actions">
-                    <button onClick={onClose} className="modal-button cancel">Отмена</button>
-                    <button onClick={handleFormSubmit} className="modal-button save">
-                        {isEditMode ? 'Сохранить' : 'Создать'}
-                    </button>
-                </div>
+                    <div className="modal-actions">
+                        <button onClick={onClose} className="modal-button cancel">Отмена</button>
+                        <button onClick={handleFormSubmit} className="modal-button save">
+                            {isEditMode ? 'Сохранить' : 'Создать'}
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     );

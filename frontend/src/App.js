@@ -29,18 +29,21 @@ const AnimatedRoutes = () => {
     const location = useLocation();
     const nodeRefs = useRef({});
 
+    const appContext = React.useContext(AppContext);
+    if (!appContext) return null;
+
     const {
         halls, groups, scheduleItems, allStudents, allTrainers,
         isLoading: isLoadingAppLevelData,
         error: appError,
         handleOpenAddModal, handleOpenViewModal,
         showAppNotification, loadInitialData
-    } = React.useContext(AppContext); // Используем React.useContext
+    } = appContext; // Используем React.useContext
 
-    if (isLoadingAppLevelData) {
+    if (isLoadingAppLevelData && !appError) {
         return <p style={{ textAlign: 'center', padding: '20px' }}>Загрузка основных данных приложения...</p>;
     }
-    if (appError) {
+    if (appError && !isLoadingAppLevelData) {
         return <p style={{ color: 'red', textAlign: 'center', padding: '20px' }}>{appError}</p>;
     }
 
@@ -112,6 +115,18 @@ function App() {
         setTimeout(() => { setNotification({ message: '', type: '', show: false }); }, duration);
     }, []);
 
+    const reloadScheduleItems = useCallback(async () => {
+        try {
+            const scheduleItemsData = await fetchScheduleItems();
+            setScheduleItems(scheduleItemsData || []);
+        } catch (err) {
+            console.error("App.js: Failed to fetch schedule items:", err);
+            showAppNotification("Ошибка обновления данных расписания.", "error", 4000);
+        } finally {
+
+        }
+    }, [showAppNotification]);
+
     const loadInitialData = useCallback(async () => {
         // console.log("App.js: loadInitialData - STARTING APP-LEVEL DATA FETCH");
         setIsLoading(true);
@@ -165,38 +180,41 @@ function App() {
         try {
             await addScheduleItem(newScheduleData);
             showAppNotification("Занятие успешно добавлено!", "success");
-            handleCloseModal(); await loadInitialData();
+            handleCloseModal();
+            await reloadScheduleItems();
         } catch (error) {
             let detailedErrorMessage;
             if (error.status === 409) { detailedErrorMessage = "Данное время в этом зале занято"; }
             else { const apiMsg = error.message || "Неизв.ошибка"; detailedErrorMessage = `Ошибка добавления: ${apiMsg.replace(/^Не удалось.+Ошибка API: \d{3}\. /,'').replace(/^Ошибка API: \d{3}\. /,'') || "сервера."}`; }
             showAppNotification(detailedErrorMessage, "error", 6000);
         }
-    }, [loadInitialData, showAppNotification, handleCloseModal]);
+    }, [reloadScheduleItems, showAppNotification, handleCloseModal]);
 
     const handleUpdateScheduleItem = useCallback(async (itemId, updatedScheduleData) => {
         try {
             await updateScheduleItem(itemId, updatedScheduleData);
             showAppNotification("Занятие успешно обновлено!", "success");
-            handleCloseModal(); await loadInitialData();
+            handleCloseModal();
+            await reloadScheduleItems();
         } catch (error) {
             let detailedErrorMessage;
             if (error.status === 409) { detailedErrorMessage = "Данное время в этом зале занято"; }
             else { const apiMsg = error.message || "Неизв.ошибка"; detailedErrorMessage = `Ошибка обновления: ${apiMsg.replace(/^Не удалось.+Ошибка API: \d{3}\. /,'').replace(/^Ошибка API: \d{3}\. /,'') || "сервера."}`; }
             showAppNotification(detailedErrorMessage, "error", 7000);
         }
-    }, [loadInitialData, showAppNotification, handleCloseModal]);
+    }, [reloadScheduleItems, showAppNotification, handleCloseModal]);
 
     const handleDeleteScheduleItem = useCallback(async (itemId) => {
         try {
             await deleteScheduleItem(itemId);
             showAppNotification("Занятие успешно удалено!", "success");
-            handleCloseModal(); await loadInitialData();
+            handleCloseModal();
+            await reloadScheduleItems();
         } catch (error) {
             const apiMsg = error.message || "Неизв.ошибка";
             showAppNotification(`Ошибка удаления: ${apiMsg.replace(/^Не удалось.+Ошибка API: \d{3}\. /,'').replace(/^Ошибка API: \d{3}\. /,'') || "сервера."}`, "error");
         }
-    }, [loadInitialData, showAppNotification, handleCloseModal]);
+    }, [reloadScheduleItems, showAppNotification, handleCloseModal]);
 
     const appContextValue = {
         halls, groups, scheduleItems, allStudents, allTrainers,

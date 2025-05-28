@@ -240,6 +240,7 @@ const AddScheduleModal = ({
                             </div>
                         </div>
                     )}
+
                 </div>
 
                 <div className="form-group">
@@ -257,6 +258,7 @@ const AddScheduleModal = ({
                 <div className="form-group">
                     <label htmlFor="endTimeModal">Время окончания:</label>
                     <select id="endTimeModal" value={endTime} onChange={(e) => setEndTime(e.target.value)} >
+
                         {endTimeSlots.filter(time => time > startTime).map(time => (
                             <option key={time} value={time}>{time}</option>
                         ))}

@@ -61,6 +61,7 @@ export default function ScheduleGrid({ hall, groups, scheduleItems, onSlotClick,
                                     }}
                                 >
                                     {item && <ScheduleCellContent item={item} />}
+
                                 </td>
                             );
                         })}
